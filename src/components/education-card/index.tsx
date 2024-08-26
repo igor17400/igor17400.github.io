@@ -6,19 +6,30 @@ const ListItem = ({
   time,
   degree,
   institution,
+  schoolLink,
 }: {
   time: React.ReactNode;
   degree?: React.ReactNode;
   institution?: React.ReactNode;
+  schoolLink?: React.ReactNode;
 }) => (
   <li className="mb-5 ml-4">
     <div
       className="absolute w-2 h-2 bg-base-300 rounded-full border border-base-300 mt-1.5"
-      style={{ left: '-4.5px' }}
+      style={{ left: '-1.5px' }}
     ></div>
-    <div className="my-0.5 text-xs">{time}</div>
-    <h3 className="font-semibold">{degree}</h3>
-    <div className="mb-4 font-normal">{institution}</div>
+    <div className="my-0.5 text-base">{time}</div>
+    <h3 className="font-semibold text-base">{degree}</h3>
+    <div className="mb-4 text-lg italic text-primary">
+      <a
+        href={`${schoolLink}`}
+        target="_blank"
+        rel="noreferrer"
+        className="hover:underline"
+      >
+        {institution}
+      </a>
+    </div>
   </li>
 );
 
@@ -76,6 +87,7 @@ const EducationCard = ({
                     time={`${item.from} - ${item.to}`}
                     degree={item.degree}
                     institution={item.institution}
+                    schoolLink={item.schoolLink}
                   />
                 ))}
               </>

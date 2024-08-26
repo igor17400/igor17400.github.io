@@ -351,6 +351,21 @@ interface ThemeConfig {
    * Custom theme
    */
   customTheme?: CustomTheme;
+
+  /**
+   * Toggle button for choosing only between light and dark theme
+   */
+  selectButton?: boolean;
+
+  /**
+   * Light Theme for toggle option
+   */
+  lightTheme?: string;
+
+  /**
+   * Dark Theme for toggle option
+   */
+  darkTheme?: string;
 }
 
 interface Config {

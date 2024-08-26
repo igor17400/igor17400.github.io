@@ -6,25 +6,47 @@ const ListItem = ({
   year,
   name,
   body,
-  link,
+  portfolioLink,
+  certificateLink,
 }: {
   year?: React.ReactNode;
   name?: React.ReactNode;
   body?: React.ReactNode;
-  link?: string;
+  portfolioLink?: string;
+  certificateLink?: string;
 }) => (
   <li className="mb-5 ml-4">
     <div
-      className="absolute w-2 h-2 bg-base-300 rounded-full border border-base-300 mt-1.5"
+      className="absolute w-2 h-2 bg-base-300 rounded-full border border-base-300 mt-2"
       style={{ left: '-4.5px' }}
     ></div>
-    <div className="my-0.5 text-xs">{year}</div>
-    <div className="font-medium">
-      <a href={link} target="_blank" rel="noreferrer">
-        {name}
+    <div className="my-0.5 text-base">
+      <b className="font-bold text-xl">{name}</b> - {year}
+    </div>
+    <h3 className="italic text-lg">{body}</h3>
+    <div className="font-medium space-x-4">
+      {portfolioLink && (
+        <>
+          <a
+            href={portfolioLink}
+            target="_blank"
+            rel="noreferrer"
+            className="text-primary italic hover:underline"
+          >
+            Portfolio
+          </a>
+          <span className="text-gray-500">|</span>
+        </>
+      )}
+      <a
+        href={certificateLink}
+        target="_blank"
+        rel="noreferrer"
+        className="text-primary italic hover:underline"
+      >
+        Certificate
       </a>
     </div>
-    <h3 className="mb-4 font-normal">{body}</h3>
   </li>
 );
 
@@ -67,7 +89,7 @@ const CertificationCard = ({
               skeleton({ widthCls: 'w-32', heightCls: 'h-8' })
             ) : (
               <span className="text-base-content opacity-70">
-                Certification
+                Certifications
               </span>
             )}
           </h5>
@@ -84,7 +106,8 @@ const CertificationCard = ({
                     year={certification.year}
                     name={certification.name}
                     body={certification.body}
-                    link={certification.link}
+                    portfolioLink={certification.portfolioLink}
+                    certificateLink={certification.certificateLink}
                   />
                 ))}
               </>

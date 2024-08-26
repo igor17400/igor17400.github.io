@@ -1,0 +1,29 @@
+/* Background image for the header */
+.bg-athos {
+  background-image: url('../../assets/athos.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.water-fill-btn {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.water-fill-btn .water-fill-animation {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #058dfc; /* Adjust the color as needed */
+  transition: top 0.3s ease-in-out;
+  z-index: 0;
+}
+
+.water-fill-btn:hover .water-fill-animation {
+  top: 0;
+}

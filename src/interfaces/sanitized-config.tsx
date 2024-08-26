@@ -81,7 +81,8 @@ export interface SanitizedCertification {
   body?: string;
   name?: string;
   year?: string;
-  link?: string;
+  portfolioLink?: string;
+  certificateLink?: string;
 }
 
 export interface SanitizedEducation {
@@ -89,6 +90,7 @@ export interface SanitizedEducation {
   degree?: string;
   from: string;
   to: string;
+  schoolLink: string;
 }
 
 export interface SanitizedPublication {
@@ -133,6 +135,9 @@ export interface SanitizedThemeConfig {
   displayAvatarRing: boolean;
   themes: Array<string>;
   customTheme: SanitizedCustomTheme;
+  selectButton: boolean;
+  lightTheme: string;
+  darkTheme: string;
 }
 
 export interface SanitizedConfig {

@@ -120,6 +120,9 @@ export const getSanitizedConfig = (
       themeConfig: {
         defaultTheme: config?.themeConfig?.defaultTheme || DEFAULT_THEMES[0],
         disableSwitch: config?.themeConfig?.disableSwitch || false,
+        selectButton: config?.themeConfig?.selectButton || false,
+        lightTheme: config?.themeConfig?.lightTheme || 'winter',
+        darkTheme: config?.themeConfig?.darkTheme || 'halloween',
         respectPrefersColorScheme:
           config?.themeConfig?.respectPrefersColorScheme || false,
         displayAvatarRing: config?.themeConfig?.displayAvatarRing ?? true,
@@ -158,7 +161,7 @@ export const getSanitizedConfig = (
 
 export const getInitialTheme = (themeConfig: SanitizedThemeConfig): string => {
   if (themeConfig.disableSwitch) {
-    return themeConfig.defaultTheme;
+    return themeConfig.darkTheme;
   }
 
   if (
@@ -166,6 +169,8 @@ export const getInitialTheme = (themeConfig: SanitizedThemeConfig): string => {
     !(localStorage.getItem(LOCAL_STORAGE_KEY_NAME) === null)
   ) {
     const savedTheme = localStorage.getItem(LOCAL_STORAGE_KEY_NAME);
+    console.log('--- savedTheme ---');
+    console.log(savedTheme);
 
     if (savedTheme && themeConfig.themes.includes(savedTheme)) {
       return savedTheme;

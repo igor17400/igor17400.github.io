@@ -2,7 +2,7 @@
 
 const CONFIG = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (This is the only required config)
+    username: 'igor17400', // Your GitHub org/user name. (This is the only required config)
   },
   /**
    * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
@@ -52,14 +52,38 @@ const CONFIG = {
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
+    title: 'Portfolio of Igor L.R. Azevedo',
     description: '',
     imageURL: '',
   },
+  educations: [
+    {
+      institution: 'The University of Tokyo',
+      degree: 'Research Scholar with focus on Artificial Intelligence',
+      from: 'April 2023',
+      to: 'Present',
+      schoolLink: 'https://sites.google.com/view/toyolab/members?authuser=0',
+    },
+    {
+      institution: 'University of Brasilia',
+      degree: 'Bachelor of Electrical Engineering',
+      from: 'August 2016',
+      to: 'May 2022',
+      schoolLink: 'https://international.unb.br/',
+    },
+    {
+      institution: 'UniCEUB',
+      degree: 'System Analysis and Development Associate Degree',
+      from: 'January 2017',
+      to: 'December 2018',
+      schoolLink:
+        'https://www.uniceub.br/pdp/graduacao/ti/analise-e-desenvolvimento-de-sistemas-96',
+    },
+  ],
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: 'igor-lima-',
+    twitter: '',
+    mastodon: '',
     researchGate: '',
     facebook: '',
     instagram: '',
@@ -69,18 +93,18 @@ const CONFIG = {
     udemy: '',
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
+    medium: 'igorlima1740',
+    dev: '',
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
-    website: 'https://www.arifszn.com',
+    website: 'https://www.igor174.com',
     phone: '',
-    email: 'arifulalamszn@gmail.com',
+    email: 'lima-rocha-azevedo-igor@g.ecc.u-tokyo.ac.jp',
   },
   resume: {
     fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      'https://drive.google.com/file/d/1KanE0fAWfujOY-ZsuRIKAUxhnuRhDT8H/view?usp=sharing',
   },
   skills: [
     'PHP',
@@ -100,51 +124,81 @@ const CONFIG = {
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
+      company: 'Voga',
+      position: 'Technology Coordinator',
+      from: 'February 2022',
+      to: 'April 2023',
+      companyLink: 'https://voga.com.br/',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'BridgeHub',
+      position: 'Development Team Lead',
+      from: 'July 2021',
+      to: 'January 2022',
+      companyLink: 'https://www.bridgehub.com.br/',
+    },
+    {
+      company: 'Cellcrypt Inc.',
+      position: 'Researcher Intern',
+      from: 'September 2020',
+      to: 'July 2021',
+      companyLink: 'https://www.cellcrypt.com/',
     },
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
-  ],
-  educations: [
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      name: 'Deep Learning',
+      body: 'Carnegie Mellon University',
+      year: 'September 2024',
+      certificateLink: 'https://example.com',
+      portfolioLink: 'https://example.com',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      name: 'Algorithms and Data Structures',
+      body: 'University of California San Diego',
+      year: 'August 2024',
+      certificateLink: 'https://github.com/igor17400/algorithms-174',
+      portfolioLink: 'https://example.com',
+    },
+    {
+      name: 'Digital Signal Processing',
+      body: 'EPFL',
+      year: 'August 2024',
+      certificateLink: 'https://example.com',
+      portfolioLink: 'https://github.com/igor17400/dsp-174',
+    },
+    {
+      name: 'Information Theory',
+      body: 'The Chinese University of Hong Kong',
+      year: 'August 2024',
+      certificateLink: 'https://example.com',
+      portfolioLink: 'https://github.com/igor17400/information-theory-174',
+    },
+    {
+      name: 'Model United Nations',
+      body: 'Harvard University',
+      year: 'January 2016',
+      certificateLink:
+        'https://docs.google.com/document/d/1OeLCVYxeNLCjI2848y1Or62LnbPeZyRRgZjVIlGC4lQ/edit',
+    },
+    {
+      name: 'Model United Nations',
+      body: 'Yale University',
+      year: 'January 2016',
+      certificateLink:
+        'https://docs.google.com/document/d/1HdveJyYtpcptfvcty3LEU59fiH7ukSO2oBXLQtAwZ8w/edit',
     },
   ],
   publications: [
     {
-      title: 'Publication Title',
+      title:
+        'A Look Into News Avoidance Through AWRS: An Avoidance-Aware Recommender System',
       conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
+      journalName: '',
+      authors: 'Igor L.R. Azevedo, Toyotaro Suzumura, Yuichiro Yasui',
+      link: 'https://arxiv.org/abs/2407.09137',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'In recent years, journalists have expressed concerns about the increasing trend of news article avoidance, especially within specific domains. This issue has been exacerbated by the rise of recommender systems. Our research indicates that recommender systems should consider avoidance as a fundamental factor. We argue that news articles can be characterized by three principal elements: exposure, relevance, and avoidance, all of which are closely interconnected. To address these challenges, we introduce AWRS, an Avoidance-Aware Recommender System. This framework incorporates avoidance awareness when recommending news, based on the premise that news article avoidance conveys significant information about user preferences. Evaluation results on three news datasets in different languages (English, Norwegian, and Japanese) demonstrate that our method outperforms existing approaches.',
     },
     {
       title: 'Publication Title',
@@ -171,15 +225,16 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'lofi',
-
-    // Hides the switch in the navbar
-    // Useful if you want to support a single color mode
     disableSwitch: false,
+    // defaultTheme: 'light',
+
+    // If you want to activate toggle button with only two colors - dark and light
+    lightTheme: 'winter',
+    darkTheme: 'dark',
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
-    respectPrefersColorScheme: false,
+    respectPrefersColorScheme: true,
 
     // Display the ring in Profile picture
     displayAvatarRing: true,
@@ -234,7 +289,7 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
+  footer: `Made with <a
       class="text-primary" href="https://github.com/arifszn/gitprofile"
       target="_blank"
       rel="noreferrer"

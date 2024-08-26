@@ -3,6 +3,9 @@ import { SanitizedThemeConfig } from '../../interfaces/sanitized-config';
 import { LOCAL_STORAGE_KEY_NAME } from '../../constants';
 import { skeleton } from '../../utils';
 import { MouseEvent } from 'react';
+import { useState } from 'react';
+import { AiOutlineSun, AiOutlineMoon } from 'react-icons/ai';
+import star_wars from '../../assets/star_wars_gif.gif';
 
 /**
  * Renders a theme changer component.
@@ -12,6 +15,7 @@ import { MouseEvent } from 'react';
  * @param {function} props.setTheme - A function to set the theme.
  * @param {boolean} props.loading - Whether the component is in a loading state.
  * @param {SanitizedThemeConfig} props.themeConfig - The theme configuration object.
+ * @param {boolean} props.selectButton - Whether to use a button instead of a dropdown for theme selection.
  * @return {JSX.Element} The rendered theme changer component.
  */
 const ThemeChanger = ({
@@ -19,14 +23,22 @@ const ThemeChanger = ({
   setTheme,
   loading,
   themeConfig,
+  lightTheme = 'light',
+  darkTheme = 'dark',
+  selectButton = false,
 }: {
   theme: string;
   setTheme: (theme: string) => void;
   loading: boolean;
   themeConfig: SanitizedThemeConfig;
+  lightTheme?: string;
+  darkTheme?: string;
+  selectButton?: boolean;
 }) => {
+  const [isAnimating, setIsAnimating] = useState(false);
+
   const changeTheme = (
-    e: MouseEvent<HTMLAnchorElement>,
+    e: MouseEvent<HTMLAnchorElement | HTMLButtonElement>,
     selectedTheme: string,
   ) => {
     e.preventDefault();
@@ -37,6 +49,19 @@ const ThemeChanger = ({
       localStorage.setItem(LOCAL_STORAGE_KEY_NAME, selectedTheme);
 
     setTheme(selectedTheme);
+  };
+
+  const toggleTheme = () => {
+    setIsAnimating(true);
+
+    // Toggle the theme with a small delay for animation effect
+    setTimeout(() => {
+      const newTheme = theme === lightTheme ? darkTheme : lightTheme;
+      document.querySelector('html')?.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      setTheme(newTheme);
+      setIsAnimating(false); // Stop animation after theme is set
+    }, 500); // Match the animation duration
   };
 
   return (
@@ -51,15 +76,12 @@ const ThemeChanger = ({
                 className: 'mb-1',
               })
             ) : (
-              <span className="text-base-content opacity-70">Theme</span>
+              // Render the GIF instead of "Theme"
+              <img src={star_wars} alt="Igor GIF" className="w-80 h-auto" />
             )}
           </h5>
           <span className="text-base-content text-opacity-40 capitalize text-sm">
-            {loading
-              ? skeleton({ widthCls: 'w-16', heightCls: 'h-5' })
-              : theme === themeConfig.defaultTheme
-                ? 'Default'
-                : theme}
+            {loading ? skeleton({ widthCls: 'w-16', heightCls: 'h-5' }) : ''}
           </span>
         </div>
         <div className="flex-0">
@@ -69,6 +91,25 @@ const ThemeChanger = ({
               heightCls: 'h-10',
               className: 'mr-6',
             })
+          ) : selectButton ? (
+            <button
+              onClick={toggleTheme}
+              className="btn btn-ghost normal-case opacity-50 text-base-content flex items-center"
+            >
+              {theme === lightTheme ? (
+                <>
+                  <AiOutlineMoon
+                    className={`w-8 h-8 ${isAnimating ? 'spin-animation' : ''}`}
+                  />
+                </>
+              ) : (
+                <>
+                  <AiOutlineSun
+                    className={`w-8 h-8 ${isAnimating ? 'spin-animation' : ''}`}
+                  />
+                </>
+              )}
+            </button>
           ) : (
             <div title="Change Theme" className="dropdown dropdown-end">
               <div
@@ -97,7 +138,6 @@ const ThemeChanger = ({
                     ),
                   ].map((item, index) => (
                     <li key={index}>
-                      {}
                       <a
                         onClick={(e) => changeTheme(e, item)}
                         className={`${theme === item ? 'active' : ''}`}
