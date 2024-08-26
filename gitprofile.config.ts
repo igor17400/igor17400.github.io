@@ -9,7 +9,7 @@ const CONFIG = {
    * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
    * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
    */
-  base: '/',
+  base: '/me',
   projects: {
     github: {
       display: true, // Display GitHub projects?
@@ -26,7 +26,7 @@ const CONFIG = {
       manual: {
         // Properties for manually specifying projects
         projects: [
-          'igor17400/profile-page',
+          'igor17400/igor17400.github.io',
           'igor17400/algorithms-174',
           'igor17400/information-theory-174',
           'igor17400/deep-learning-174',
@@ -40,7 +40,7 @@ const CONFIG = {
     },
   },
   seo: {
-    title: 'Portfolio of Igor L.R. Azevedo',
+    title: 'Igor L.R. Azevedo',
     description: '',
     imageURL: '',
   },
