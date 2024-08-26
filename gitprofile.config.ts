@@ -30,6 +30,7 @@ const CONFIG = {
           'igor17400/algorithms-174',
           'igor17400/information-theory-174',
           'igor17400/deep-learning-174',
+          'igor17400/linktree-profile',
         ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
