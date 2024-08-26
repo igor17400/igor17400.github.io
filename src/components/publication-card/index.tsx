@@ -76,7 +76,11 @@ const PublicationCard = ({
   const renderPublications = () => {
     return publications.map((item, index) => (
       <a
-        className="card shadow-lg compact bg-base-100 cursor-pointer"
+        className="
+          card shadow-lg compact bg-base-100 cursor-pointer
+          hover:shadow-2xl hover:text-primary
+          hover:transform hover:translate-y-[-10px] transition-transform duration-300
+        "
         key={index}
         href={item.link}
         target="_blank"
@@ -87,20 +91,22 @@ const PublicationCard = ({
             <div className="w-full">
               <div className="px-4">
                 <div className="text-center w-full">
-                  <h2 className="font-medium opacity-60 mb-2">{item.title}</h2>
+                  <h2 className="font-medium opacity-60 mb-2 text-xl italic">
+                    {item.title}
+                  </h2>
                   {item.conferenceName && (
-                    <p className="text-base-content opacity-50 text-sm">
+                    <p className="text-base-content opacity-50 text-lg">
                       {item.conferenceName}
                     </p>
                   )}
                   {item.journalName && (
-                    <p className="text-base-content opacity-50 text-sm">
+                    <p className="text-base-content opacity-50 text-lg">
                       {item.journalName}
                     </p>
                   )}
                   {item.authors && (
-                    <p className="text-base-content opacity-50 text-sm">
-                      Author: {item.authors}
+                    <p className="text-base-content opacity-50 text-lg">
+                      Authors: {item.authors}
                     </p>
                   )}
                   {item.description && (
@@ -136,7 +142,7 @@ const PublicationCard = ({
                   </h5>
                 </div>
                 <div className="col-span-2">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 gap-6">
                     {loading ? renderSkeleton() : renderPublications()}
                   </div>
                 </div>

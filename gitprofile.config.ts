@@ -107,20 +107,21 @@ const CONFIG = {
       'https://drive.google.com/file/d/1KanE0fAWfujOY-ZsuRIKAUxhnuRhDT8H/view?usp=sharing',
   },
   skills: [
-    'PHP',
-    'Laravel',
+    'Python',
+    'PyTorch',
+    'PyTorch Lightning',
+    'C',
     'JavaScript',
     'React.js',
     'Node.js',
-    'Nest.js',
+    'NestJS',
     'MySQL',
     'PostgreSQL',
     'Git',
     'Docker',
-    'PHPUnit',
     'CSS',
-    'Antd',
-    'Tailwind',
+    'Tailwind CSS',
+    'AWS',
   ],
   experiences: [
     {
@@ -201,20 +202,28 @@ const CONFIG = {
         'In recent years, journalists have expressed concerns about the increasing trend of news article avoidance, especially within specific domains. This issue has been exacerbated by the rise of recommender systems. Our research indicates that recommender systems should consider avoidance as a fundamental factor. We argue that news articles can be characterized by three principal elements: exposure, relevance, and avoidance, all of which are closely interconnected. To address these challenges, we introduce AWRS, an Avoidance-Aware Recommender System. This framework incorporates avoidance awareness when recommending news, based on the premise that news article avoidance conveys significant information about user preferences. Evaluation results on three news datasets in different languages (English, Norwegian, and Japanese) demonstrate that our method outperforms existing approaches.',
     },
     {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
+      title:
+        "Popular News Always Compete for the User's Attention! POPK: Mitigating Popularity Bias via a Temporal-Counterfactual",
+      conferenceName: '',
       journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      authors: 'Igor L.R. Azevedo, Toyotaro Suzumura, Yuichiro Yasui',
+      link: 'https://arxiv.org/abs/2407.09939',
+      description: `In news recommendation systems, reducing popularity bias is essential for delivering accurate and diverse recommendations. This paper presents POPK, a new method that uses temporal-counterfactual analysis to mitigate the influence of popular news articles. By asking, What if, at a given time t, a set of popular news articles were competing for the user's attention to be clicked?", POPK aims to improve recommendation accuracy and diversity. We tested POPK on three different language datasets (Japanese, English, and Norwegian) and found that it successfully enhances traditional methods. POPK offers flexibility for customization to enhance either accuracy or diversity, alongside providing distinct ways of measuring popularity. We argue that popular news articles always compete for attention, even if they are not explicitly present in the user's impression list. POPK systematically eliminates the implicit influence of popular news articles during each training step. We combine counterfactual reasoning with a temporal approach to adjust the negative sample space, refining understanding of user interests. Our findings underscore how POPK effectively enhances the accuracy and diversity of recommended articles while also tailoring the approach to specific needs.`,
+    },
+    {
+      title: 'A SHA-3 Co-Processor for IoT Applications',
+      conferenceName: '',
+      journalName: '',
+      authors: 'Igor L.R. Azevedo; Alexandre S. Nery; Alexandre da C. Sena',
+      link: 'https://ieeexplore.ieee.org/document/9263759',
+      description: `The Secure Hash Algorithm 3 (SHA-3) is the latest member of the secure hash family of algorithms (SHA) on top of which several technologies are built upon, such as in Blockchain, security applications and protocols, including TLS, SSL, PGP, SSH, IPsec, and S/MIME. Due to tighter processing and power efficiency constraints often present in embedded applications, hardware architectures such as FPGAs (Field-Programmable Gate Array) can be employed to enable the design and implementation of efficient hardware accelerators. Thus, this work implements a SHA-3 Co-Processor in FPGA suitable for IoT applications. Performance, Circuit-area and Energy consumption results show that the Co-Processor is about 65% faster than the ARM Cortex-A9 processor that is also equipped in the FPGA chip, as well as in many IoT embedded systems.`,
     },
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
+    source: 'medium', // medium | dev
+    username: 'igorlima1740', // to hide blog section, keep it empty
+    limit: 1, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
@@ -275,17 +284,6 @@ const CONFIG = {
       'sunset',
       'procyon',
     ],
-
-    // Custom theme, applied to `procyon` theme
-    customTheme: {
-      primary: '#fc055b',
-      secondary: '#219aaf',
-      accent: '#e8d03a',
-      neutral: '#2A2730',
-      'base-100': '#E3E3ED',
-      '--rounded-box': '3rem',
-      '--rounded-btn': '3rem',
-    },
   },
 
   // Optional Footer. Supports plain text or HTML.
