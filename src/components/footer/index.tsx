@@ -10,7 +10,7 @@ const Footer = ({
   if (!content) return null;
 
   return (
-    <div className="card-body">
+    <div className="card-body italic">
       {loading ? (
         skeleton({ widthCls: 'w-52', heightCls: 'h-6' })
       ) : (

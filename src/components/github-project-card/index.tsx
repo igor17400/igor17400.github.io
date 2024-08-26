@@ -76,7 +76,10 @@ const GithubProjectCard = ({
   const renderProjects = () => {
     return githubProjects.map((item, index) => (
       <a
-        className="card shadow-lg compact bg-base-100 cursor-pointer"
+        className="card shadow-lg compact bg-base-100 cursor-pointer
+        hover:shadow-2xl hover:text-primary
+        hover:transform hover:translate-y-[-10px] transition-transform duration-300
+        "
         href={item.html_url}
         key={index}
         onClick={(e) => {
