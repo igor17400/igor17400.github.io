@@ -56,7 +56,7 @@ const ThemeChanger = ({
 
     // Toggle the theme with a small delay for animation effect
     setTimeout(() => {
-      const newTheme = theme === lightTheme ? darkTheme : lightTheme;
+      const newTheme = theme === darkTheme ? lightTheme : darkTheme;
       document.querySelector('html')?.setAttribute('data-theme', newTheme);
       localStorage.setItem('theme', newTheme);
       setTheme(newTheme);

@@ -1,9 +1,15 @@
 /* Background image for the header */
-.bg-athos {
-  background-image: url('../../assets/athos.jpeg');
+.bg-image {
+  background-image: url('../../assets/catedral.avif');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 1280px) {
+  .bg-image {
+    background-position: 100% 5%;
+  }
 }
 
 .water-fill-btn {

@@ -32,16 +32,16 @@ const PortfolioHeader = ({
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-cover bg-center relative overflow-hidden bg-athos m-2 my-4">
+    <div className="min-h-screen flex flex-col bg-cover bg-center relative overflow-hidden bg-image sm:m-2 sm:my-4">
       {/* Overlay to reduce intensity */}
       <div className="overlay"></div>
 
-      <div className="flex justify-between items-center p-2 z-10 relative">
+      <div className="flex justify-between items-center p-2 mb-20 sm:mb-0 z-10 relative">
         <div></div>
         <div className="flex items-center space-x-4">
           <button
             onClick={toggleTheme}
-            className="btn btn-ghost text-lg border-2 rounded-full px-4 py-2 flex items-center justify-center"
+            className="btn btn-ghost bg-transparent hover:bg-transparent text-lg rounded-full px-4 py-2 flex items-center justify-center"
             style={{ width: '60px', height: '60px' }}
           >
             {theme === lightTheme ? (
@@ -58,7 +58,7 @@ const PortfolioHeader = ({
       </div>
       <div className="flex flex-col justify-center items-center text-center flex-grow pb-20">
         <div
-          className={`card justify-center text-center items-center p-7 sm:p-16 ${theme === lightTheme ? 'bg-white bg-opacity-90' : 'bg-black bg-opacity-90'}`}
+          className={`card justify-center text-center items-center m-2 p-2 sm:p-16 ${theme === lightTheme ? 'bg-white bg-opacity-70' : 'bg-black bg-opacity-70'}`}
         >
           <h1 className="text-4xl sm:text-6xl font-bold mb-4">
             Igor Lima Rocha Azevedo
@@ -88,7 +88,7 @@ const PortfolioHeader = ({
             <a
               href={resumeFileUrl}
               target="_blank"
-              className={`cursor-pointer bg-gradient-to-r py-2 px-4 sm:px-6 rounded-full font-semibold shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 ${theme === lightTheme ? 'text-black from-blue-600 via-blue-300 to-blue-600' : 'text-white from-blue-300 via-blue-700 to-blue-400'}`}
+              className={`cursor-pointer bg-gradient-to-r py-2 px-4 sm:px-6 rounded-full font-semibold shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 ${theme === lightTheme ? 'text-white from-blue-600 via-blue-400 to-blue-600' : 'text-white from-blue-300 via-blue-700 to-blue-400'}`}
               download
               rel="noreferrer"
             >
@@ -103,6 +103,18 @@ const PortfolioHeader = ({
             </a>
           </div>
         </div>
+      </div>
+      <div className="text-center pb-2 text-xs">
+        <p>
+          Background image by{' '}
+          <a
+            className="underline"
+            href="https://unsplash.com/@g_leighton"
+            target="_blank"
+          >
+            Gustavo Leighton
+          </a>
+        </p>
       </div>
     </div>
   );

@@ -86,10 +86,10 @@ const PublicationCard = ({
         target="_blank"
         rel="noreferrer"
       >
-        <div className="p-8 h-full w-full">
+        <div className="p-2 sm:p-8 h-full w-full">
           <div className="flex items-center flex-col">
             <div className="w-full">
-              <div className="px-4">
+              <div className="px-2 sm:px-4">
                 <div className="text-center w-full">
                   <h2 className="font-medium opacity-60 mb-2 text-xl italic">
                     {item.title}

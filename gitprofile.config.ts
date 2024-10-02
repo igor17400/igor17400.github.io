@@ -82,12 +82,11 @@ const CONFIG = {
     udemy: '',
     dribbble: '',
     behance: '',
-    medium: 'igorlima1740',
-    dev: '',
+    dev: 'igor1740',
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
-    website: 'https://www.igor174.com',
+    website: 'https://igorazevedo.com/blog',
     phone: '',
     email: 'lima-rocha-azevedo-igor@g.ecc.u-tokyo.ac.jp',
   },
@@ -140,7 +139,8 @@ const CONFIG = {
       name: 'Deep Learning',
       body: 'Carnegie Mellon University',
       year: 'September 2024',
-      certificateLink: 'https://example.com',
+      certificateLink:
+        'https://certificates.emeritus.org/2c29c0a4-7d09-4537-a330-e3b457e74e85#gs.g1h2dw',
       portfolioLink: 'https://example.com',
     },
     {
@@ -210,9 +210,9 @@ const CONFIG = {
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
-    source: 'medium', // medium | dev
-    username: 'igorlima1740', // to hide blog section, keep it empty
-    limit: 1, // How many articles to display. Max is 10.
+    source: 'dev', // medium | dev
+    username: 'igor1740', // to hide blog section, keep it empty
+    limit: 10, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
@@ -227,7 +227,7 @@ const CONFIG = {
     // defaultTheme: 'light',
 
     // If you want to activate toggle button with only two colors - dark and light
-    lightTheme: 'winter',
+    lightTheme: 'light',
     darkTheme: 'dark',
 
     // Should use the prefers-color-scheme media-query,

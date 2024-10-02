@@ -24,8 +24,7 @@ import ExperienceCard from './experience-card';
 import EducationCard from './education-card';
 import CertificationCard from './certification-card';
 import { GithubProject } from '../interfaces/github-project';
-import GithubProjectCard from './github-project-card';
-import ExternalProjectCard from './external-project-card';
+
 import BlogCard from './blog-card';
 import Footer from './footer';
 import PublicationCard from './publication-card';
@@ -44,7 +43,6 @@ const GitProfile = ({ config }: { config: Config }) => {
   const [error, setError] = useState<CustomError | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const [profile, setProfile] = useState<Profile | null>(null);
-  const [githubProjects, setGithubProjects] = useState<GithubProject[]>([]);
 
   const getGithubProjects = useCallback(
     async (publicRepoCount: number): Promise<GithubProject[]> => {
@@ -116,8 +114,6 @@ const GitProfile = ({ config }: { config: Config }) => {
       if (!sanitizedConfig.projects.github.display) {
         return;
       }
-
-      setGithubProjects(await getGithubProjects(data.public_repos));
     } catch (error) {
       handleError(error as AxiosError | Error);
     } finally {
@@ -193,7 +189,7 @@ const GitProfile = ({ config }: { config: Config }) => {
               googleAnalyticsId={sanitizedConfig.googleAnalytics.id}
               appliedTheme={theme}
             />
-            <div className={`p-4 lg:p-10 min-h-full ${BG_COLOR}`}>
+            <div className={` min-h-full ${BG_COLOR}`}>
               <PortfolioHeader
                 theme={theme}
                 setTheme={setTheme}
@@ -201,7 +197,7 @@ const GitProfile = ({ config }: { config: Config }) => {
                 darkTheme={sanitizedConfig.themeConfig.darkTheme}
                 resumeFileUrl={sanitizedConfig.resume.fileUrl}
               />
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 rounded-box">
+              <div className="p-4 lg:p-10 grid grid-cols-1 lg:grid-cols-3 gap-6 rounded-box">
                 <div className="col-span-1">
                   <div className="grid grid-cols-1 gap-6">
                     {sanitizedConfig.educations.length !== 0 && (
@@ -216,24 +212,30 @@ const GitProfile = ({ config }: { config: Config }) => {
                         experiences={sanitizedConfig.experiences}
                       />
                     )}
-                    {sanitizedConfig.certifications.length !== 0 && (
-                      <CertificationCard
+                    <div className="hidden md:block">
+                      {sanitizedConfig.certifications.length !== 0 && (
+                        <CertificationCard
+                          loading={loading}
+                          certifications={sanitizedConfig.certifications}
+                        />
+                      )}
+                    </div>
+                    <div className="hidden md:block">
+                      <DetailsCard
+                        profile={profile}
                         loading={loading}
-                        certifications={sanitizedConfig.certifications}
+                        github={sanitizedConfig.github}
+                        social={sanitizedConfig.social}
                       />
-                    )}
-                    <DetailsCard
-                      profile={profile}
-                      loading={loading}
-                      github={sanitizedConfig.github}
-                      social={sanitizedConfig.social}
-                    />
-                    {sanitizedConfig.skills.length !== 0 && (
-                      <SkillCard
-                        loading={loading}
-                        skills={sanitizedConfig.skills}
-                      />
-                    )}
+                    </div>
+                    <div className="hidden md:block">
+                      {sanitizedConfig.skills.length !== 0 && (
+                        <SkillCard
+                          loading={loading}
+                          skills={sanitizedConfig.skills}
+                        />
+                      )}
+                    </div>
                   </div>
                 </div>
                 <div className="lg:col-span-2 col-span-1">
@@ -244,27 +246,6 @@ const GitProfile = ({ config }: { config: Config }) => {
                         publications={sanitizedConfig.publications}
                       />
                     )}
-                    {sanitizedConfig.projects.github.display && (
-                      <GithubProjectCard
-                        header={sanitizedConfig.projects.github.header}
-                        limit={sanitizedConfig.projects.github.automatic.limit}
-                        githubProjects={githubProjects}
-                        loading={loading}
-                        username={sanitizedConfig.github.username}
-                        googleAnalyticsId={sanitizedConfig.googleAnalytics.id}
-                      />
-                    )}
-                    {sanitizedConfig.projects.external.projects.length !==
-                      0 && (
-                      <ExternalProjectCard
-                        loading={loading}
-                        header={sanitizedConfig.projects.external.header}
-                        externalProjects={
-                          sanitizedConfig.projects.external.projects
-                        }
-                        googleAnalyticId={sanitizedConfig.googleAnalytics.id}
-                      />
-                    )}
                     {sanitizedConfig.blog.display && (
                       <BlogCard
                         loading={loading}
@@ -272,6 +253,30 @@ const GitProfile = ({ config }: { config: Config }) => {
                         blog={sanitizedConfig.blog}
                       />
                     )}
+                    <div className="block sm:hidden">
+                      {sanitizedConfig.certifications.length !== 0 && (
+                        <CertificationCard
+                          loading={loading}
+                          certifications={sanitizedConfig.certifications}
+                        />
+                      )}
+                    </div>
+                    <div className="block sm:hidden">
+                      <DetailsCard
+                        profile={profile}
+                        loading={loading}
+                        github={sanitizedConfig.github}
+                        social={sanitizedConfig.social}
+                      />
+                    </div>
+                    <div className="block sm:hidden">
+                      {sanitizedConfig.skills.length !== 0 && (
+                        <SkillCard
+                          loading={loading}
+                          skills={sanitizedConfig.skills}
+                        />
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
