@@ -88,18 +88,15 @@ const PortfolioHeader = ({
             <a
               href={resumeFileUrl}
               target="_blank"
-              className={`cursor-pointer bg-gradient-to-r py-2 px-4 sm:px-6 rounded-full font-semibold shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 ${theme === lightTheme ? 'text-white from-blue-600 via-blue-400 to-blue-600' : 'text-white from-blue-300 via-blue-700 to-blue-400'}`}
+              className={`cursor-pointer bg-gradient-to-r py-2 px-4 sm:px-6 rounded-full font-semibold shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 ${
+                theme === lightTheme
+                  ? 'text-white from-blue-600 via-blue-400 to-blue-600'
+                  : 'text-white from-blue-300 via-blue-700 to-blue-400'
+              }`}
               download
               rel="noreferrer"
             >
               Download Resume
-            </a>
-            <a
-              href="#contact"
-              className="relative overflow-hidden bg-white border-2 text-black py-2 px-4 sm:px-6 rounded-full font-semibold shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 hover:text-white water-fill-btn"
-            >
-              <span className="relative z-10">Contact</span>
-              <div className="absolute inset-0 bg-blue-200 water-fill-animation"></div>
             </a>
           </div>
         </div>
