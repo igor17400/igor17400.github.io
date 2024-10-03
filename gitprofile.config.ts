@@ -169,14 +169,14 @@ const CONFIG = {
       body: 'Harvard University',
       year: 'January 2016',
       certificateLink:
-        'https://docs.google.com/document/d/1OeLCVYxeNLCjI2848y1Or62LnbPeZyRRgZjVIlGC4lQ/edit',
+        'https://drive.google.com/file/d/1wMRMMpJ7KBMUA7MTvMQGEnfK6Eey6BEE/view?usp=sharing',
     },
     {
       name: 'Model United Nations',
       body: 'Yale University',
       year: 'January 2016',
       certificateLink:
-        'https://docs.google.com/document/d/1HdveJyYtpcptfvcty3LEU59fiH7ukSO2oBXLQtAwZ8w/edit',
+        'https://drive.google.com/file/d/1glrlExEZ374Kv7VMhD_fepDu2Bl9-LpO/view?usp=sharing',
     },
   ],
   publications: [
