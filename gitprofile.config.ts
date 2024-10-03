@@ -133,6 +133,14 @@ const CONFIG = {
       to: 'July 2021',
       companyLink: 'https://www.cellcrypt.com/',
     },
+    {
+      company:
+        'ENETEC - University of Brasilia Electrical Engineering Junior Enterprise',
+      position: 'Commercial Director',
+      from: 'June 2019',
+      to: 'August 2020',
+      companyLink: 'https://enetec.unb.br/',
+    },
   ],
   certifications: [
     {
