@@ -28,6 +28,8 @@ import { GithubProject } from '../interfaces/github-project';
 import BlogCard from './blog-card';
 import Footer from './footer';
 import PublicationCard from './publication-card';
+import ExternalProjectCard from './external-project-card';
+import GithubProjectCard from './github-project-card';
 
 /**
  * Renders the GitProfile component.
@@ -43,6 +45,7 @@ const GitProfile = ({ config }: { config: Config }) => {
   const [error, setError] = useState<CustomError | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const [profile, setProfile] = useState<Profile | null>(null);
+  const [githubProjects, setGithubProjects] = useState<GithubProject[]>([]);
 
   const getGithubProjects = useCallback(
     async (publicRepoCount: number): Promise<GithubProject[]> => {
@@ -69,11 +72,12 @@ const GitProfile = ({ config }: { config: Config }) => {
         if (sanitizedConfig.projects.github.manual.projects.length === 0) {
           return [];
         }
+
         const repos = sanitizedConfig.projects.github.manual.projects
           .map((project) => `+repo:${project}`)
           .join('');
 
-        const url = `https://api.github.com/search/repositories?q=${repos}+fork:true&type=Repositories`;
+        const url = `https://api.github.com/search/repositories?q=${repos}+fork:true&type=Repositories&sort=${sanitizedConfig.projects.github.manual.sortBy}`;
 
         const repoResponse = await axios.get(url, {
           headers: { 'Content-Type': 'application/vnd.github.v3+json' },
@@ -114,6 +118,8 @@ const GitProfile = ({ config }: { config: Config }) => {
       if (!sanitizedConfig.projects.github.display) {
         return;
       }
+
+      setGithubProjects(await getGithubProjects(data.public_repos));
     } catch (error) {
       handleError(error as AxiosError | Error);
     } finally {
@@ -244,6 +250,27 @@ const GitProfile = ({ config }: { config: Config }) => {
                       <PublicationCard
                         loading={loading}
                         publications={sanitizedConfig.publications}
+                      />
+                    )}
+                    {sanitizedConfig.projects.github.display && (
+                      <GithubProjectCard
+                        header={sanitizedConfig.projects.github.header}
+                        limit={sanitizedConfig.projects.github.automatic.limit}
+                        githubProjects={githubProjects}
+                        loading={loading}
+                        username={sanitizedConfig.github.username}
+                        googleAnalyticsId={sanitizedConfig.googleAnalytics.id}
+                      />
+                    )}
+                    {sanitizedConfig.projects.external.projects.length !==
+                      0 && (
+                      <ExternalProjectCard
+                        loading={loading}
+                        header={sanitizedConfig.projects.external.header}
+                        externalProjects={
+                          sanitizedConfig.projects.external.projects
+                        }
+                        googleAnalyticId={sanitizedConfig.googleAnalytics.id}
                       />
                     )}
                     {sanitizedConfig.blog.display && (

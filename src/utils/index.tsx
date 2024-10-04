@@ -169,8 +169,6 @@ export const getInitialTheme = (themeConfig: SanitizedThemeConfig): string => {
     !(localStorage.getItem(LOCAL_STORAGE_KEY_NAME) === null)
   ) {
     const savedTheme = localStorage.getItem(LOCAL_STORAGE_KEY_NAME);
-    console.log('--- savedTheme ---');
-    console.log(savedTheme);
 
     if (savedTheme && themeConfig.themes.includes(savedTheme)) {
       return savedTheme;

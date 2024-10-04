@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import { SanitizedPublication } from '../../interfaces/sanitized-config';
 import { skeleton } from '../../utils';
+import { GoLinkExternal } from 'react-icons/go';
 
 const PublicationCard = ({
   publications,
@@ -91,7 +92,19 @@ const PublicationCard = ({
             <div className="w-full">
               <div className="px-2 sm:px-4">
                 <div className="text-center w-full">
-                  <h2 className="font-medium opacity-60 mb-2 text-xl italic">
+                  <div className="flex py-2">
+                    <div className="flex-grow" />
+                    <div
+                      className="text-lg flex items-start justify-end"
+                      style={{ flexBasis: '15%' }}
+                    >
+                      <GoLinkExternal />
+                    </div>
+                  </div>
+                  <h2
+                    className="font-medium opacity-60 mb-2 text-xl italic"
+                    style={{ flexBasis: '85%' }}
+                  >
                     {item.title}
                   </h2>
                   {item.conferenceName && (

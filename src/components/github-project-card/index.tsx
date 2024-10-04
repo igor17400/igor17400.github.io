@@ -3,6 +3,7 @@ import { AiOutlineFork, AiOutlineStar } from 'react-icons/ai';
 import { MdInsertLink } from 'react-icons/md';
 import { ga, getLanguageColor, skeleton } from '../../utils';
 import { GithubProject } from '../../interfaces/github-project';
+import { GoLinkExternal } from 'react-icons/go';
 
 const GithubProjectCard = ({
   header,
@@ -95,11 +96,20 @@ const GithubProjectCard = ({
             console.error(error);
           }
 
-          window?.open(item.html_url, '_blank');
+          window?.open(item.homepage ? item.homepage : item.html_url, '_blank');
         }}
       >
-        <div className="flex justify-between flex-col p-8 h-full w-full">
+        <div className="flex justify-between flex-col p-4 h-full w-full">
           <div>
+            <div className="flex">
+              <div className="flex-grow" />
+              <div
+                className="text-lg flex items-start justify-end"
+                style={{ flexBasis: '15%' }}
+              >
+                <GoLinkExternal />
+              </div>
+            </div>
             <div className="flex items-center truncate">
               <div className="card-title text-lg tracking-wide flex text-base-content opacity-60">
                 <MdInsertLink className="my-auto" />

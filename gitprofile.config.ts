@@ -13,10 +13,10 @@ const CONFIG = {
   projects: {
     github: {
       display: true, // Display GitHub projects?
-      header: 'Github Projects',
+      header: 'Projects',
       mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
+        sortBy: 'updated', // Sort projects by 'stars' or 'updated'
         limit: 8, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
@@ -25,12 +25,12 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
+        sortBy: 'updated',
         projects: [
           'igor17400/igor17400.github.io',
-          'igor17400/algorithms-174',
-          'igor17400/information-theory-174',
-          'igor17400/deep-learning-174',
-          'igor17400/linktree-profile',
+          'igor17400/n2s-algo',
+          'igor17400/n2s-info-theory',
+          'igor17400/n2s-dsp',
         ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
@@ -92,7 +92,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://drive.google.com/file/d/1KanE0fAWfujOY-ZsuRIKAUxhnuRhDT8H/view?usp=sharing',
+      'https://drive.google.com/file/d/1Q8JOiaVUqFnytBTCQIEXqMazJ0pR1ckM/view?usp=sharing',
   },
   skills: [
     'Python',
