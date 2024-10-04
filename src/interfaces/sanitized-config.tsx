@@ -15,7 +15,7 @@ export interface SanitizedGitHubProjects {
     };
   };
   manual: {
-    sortBy: string;
+    sortBy?: string;
     projects: Array<string>;
   };
 }
