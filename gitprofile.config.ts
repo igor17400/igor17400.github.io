@@ -163,8 +163,8 @@ const CONFIG = {
       body: 'EPFL',
       year: 'September 2024',
       certificateLink:
-        'https://coursera.org/share/1e08fdb315e8b888765d466ce015c7dc',
-      // portfolioLink: 'https://github.com/igor17400/dsp-174',
+        'https://drive.google.com/file/d/18Vup-ms97WL1c-UVJZsVDv3mrNMTai2H/view?usp=sharing',
+      portfolioLink: 'https://github.com/igor17400/dsp-174',
     },
     // {
     //   name: 'Information Theory',
