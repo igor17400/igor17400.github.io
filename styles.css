@@ -790,6 +790,10 @@ a:focus {
     display: none;
 }
 
+.story-section-mobile {
+    display: none;
+}
+
 @media (max-width: 700px) {
     .bio-container {
         display: none;
@@ -808,6 +812,12 @@ a:focus {
         font-size: 0.97em;
         line-height: 1.6;
         text-align: center;
+    }
+    .story-section {
+        display: none !important;
+    }
+    .story-section-mobile {
+        display: block !important;
     }
     .img-name-container-mobile {
         display: flex;
@@ -874,4 +884,51 @@ nav.opaque {
     background: var(--secondary-bg);
     box-shadow: 0 2px 8px var(--shadow-hover);
     transition: background 0.3s, box-shadow 0.3s;
+}
+
+/* Floating emoji animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px) translateX(0px) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-20px) translateX(15px) rotate(5deg);
+    }
+    50% {
+        transform: translateY(-10px) translateX(25px) rotate(-3deg);
+    }
+    75% {
+        transform: translateY(-25px) translateX(10px) rotate(7deg);
+    }
+    100% {
+        transform: translateY(0px) translateX(0px) rotate(0deg);
+    }
+}
+
+.floating-emoji {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 3em;
+    animation: float 6s ease-in-out infinite;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.floating-emoji-mobile {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2em;
+    animation: float 5s ease-in-out infinite;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.bio-container {
+    position: relative;
+}
+
+.bio-container-mobile {
+    position: relative;
 }
