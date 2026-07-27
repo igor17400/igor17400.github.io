@@ -14,7 +14,6 @@
     <link rel="apple-touch-icon" href="https://igorazevedo.com/apple-touch-icon.png"/>
     <link rel="icon" sizes="192x192" href="https://igorazevedo.com/icon-192.png">
     <link rel="stylesheet" href="styles.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
@@ -33,58 +32,63 @@
     <a href="#papers">Papers</a>
     <a href="#awards">Awards</a>
     <a href="#certifications">Certifications</a>
-    <a href="#projects">Projects</a>
+    <a href="#projects">Open Source</a>
     <a href="#essentials">Essentials</a>
 </nav>
-<section class="bio-container" id="bio">
-    <div class="floating-emoji">✨</div>
-    <div style="text-align: center; margin: 20px;">
-        <img src="assets/profile.jpeg" alt="Profile photo of Igor L.R. Azevedo" class="profile-img-square"
-             style="display: block; margin: 0 auto 15px auto;">
-        <div class="name-box">
-            <span class="name">Igor L.R. Azevedo</span>
-        </div>
-        <div class="brief-details">
-            <p style="margin-top: 5px;">Electrical Engineer</p>
+<header class="hero" id="bio">
+    <div class="hero__motif" aria-hidden="true"></div>
+
+    <div class="hero__id">
+        <img src="assets/profile.jpeg" alt="Igor L.R. Azevedo" class="hero__portrait" width="132" height="132">
+        <div>
+            <h1 class="hero__name">Igor L.R. Azevedo</h1>
+            <p class="hero__role">Electrical Engineer</p>
         </div>
     </div>
-    <p class="profile-summary" style="text-align: center;">
-        Master of Research (MRes) in Artificial Intelligence @ <span class="profile-highlight"><a
-            href="https://www.imperial.ac.uk/computing/prospective-students/courses/pg/mres-artificial-intelligence-and-machine-learning/"
-            target="_blank" rel="noopener">Imperial College London</a></span> 🇬🇧
-        <br> Former Research Scholar @
-        <span class="profile-highlight"><a href="https://sites.google.com/view/toyolab/members"
-                                           target="_blank" rel="noopener">The University of Tokyo</a></span> 🇯🇵
-        <br> BSc in Electrical Engineering @ <span class="profile-highlight"><a href="https://international.unb.br/"
-                                                                                target="_blank" rel="noopener">University of Brasília</a></span>
-        🇧🇷
-    </p>
-    <div class="contact-container">
-        <div class="contact-header">
-            <h3>Contact & Links</h3>
+
+    <dl class="hero__track">
+        <div class="hero__track-row">
+            <dt>2025 — 26</dt>
+            <dd>
+                <a href="https://www.imperial.ac.uk/computing/prospective-students/courses/pg/mres-artificial-intelligence-and-machine-learning/"
+                   target="_blank" rel="noopener">Imperial College London</a><span class="hero__flag">🇬🇧</span>
+                <span class="hero__sub">MRes, Artificial Intelligence &amp; Machine Learning</span>
+            </dd>
         </div>
-        <div class="contact-links">
-            <a href="https://scholar.google.com/citations?user=Ces4TiEAAAAJ&hl=en" target="_blank" class="contact-link">GScholar</a><span
-                class="contact-separator">|</span>
-            <a href="https://substack.com/@igorlrazevedo" target="_blank" class="contact-link">Substack</a><span
-                class="contact-separator">|</span>
-            <a href="https://github.com/igor17400" target="_blank" class="contact-link">Github</a><span
-                class="contact-separator">|</span>
-            <a href="https://www.linkedin.com/in/igorlrazevedo" target="_blank" class="contact-link">LinkedIn</a><span
-                class="contact-separator">|</span>
-            <a href="https://x.com/igorlrazevedo" target="_blank" class="contact-link">Twitter(X)</a>
+        <div class="hero__track-row">
+            <dt>2023 — 25</dt>
+            <dd>
+                <a href="https://sites.google.com/view/toyolab/members" target="_blank" rel="noopener">The University of
+                    Tokyo</a><span class="hero__flag">🇯🇵</span>
+                <span class="hero__sub">Research Scholar, Graph Neural Network Laboratory</span>
+            </dd>
         </div>
-        <div class="contact-resume">
-            <a href="mailto:igorazevedo@acm.org" class="contact-btn" id="email-link">
-                <i class="fa-solid fa-envelope"></i> igorazevedo@acm.org
-            </a>
-            <a href="./assets/Igor_LR_Azevedo_CV.pdf" class="curriculum-btn" target="_blank" rel="noopener">
-                <i class="fa-solid fa-file-lines"></i> One Page CV
-            </a>
+        <div class="hero__track-row">
+            <dt>2016 — 22</dt>
+            <dd>
+                <a href="https://international.unb.br/" target="_blank" rel="noopener">University of Brasília</a><span
+                    class="hero__flag">🇧🇷</span>
+                <span class="hero__sub">BSc Electrical Engineering, First-Class Honours</span>
+            </dd>
         </div>
+    </dl>
+
+    <div class="matrix-rule" aria-hidden="true"></div>
+
+    <nav class="hero__links" aria-label="Profiles">
+        <a href="https://scholar.google.com/citations?user=Ces4TiEAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+        <a href="https://github.com/igor17400" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/igorlrazevedo" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://substack.com/@igorlrazevedo" target="_blank" rel="noopener">Substack</a>
+        <a href="https://x.com/igorlrazevedo" target="_blank" rel="noopener">Twitter (X)</a>
+    </nav>
+
+    <div class="hero__actions">
+        <a href="mailto:igorazevedo@acm.org" class="btn" id="email-link"><span>igorazevedo@acm.org</span></a>
+        <a href="./assets/Igor_LR_Azevedo_CV.pdf" class="btn" target="_blank" rel="noopener">One Page CV</a>
     </div>
-</section>
-<section class="story-section" style="max-width: 750px; margin: 3em auto; padding: 0;">
+</header>
+<section class="story-section" style="max-width: var(--w-page); margin: 3em auto; padding: 0;">
     <blockquote style="border-left: 2px solid var(--border); padding: 1.5em 2em; margin: 2em 0; font-style: normal;">
         <div style="font-size: 0.9em; line-height: 1.; color: var(--text);">
             <h4>A Bit About Me</h4>
@@ -124,51 +128,7 @@
         </div>
     </blockquote>
 </section>
-<section class="bio-container-mobile" id="bio-mobile">
-    <div class="floating-emoji-mobile">✨</div>
-    <div class="img-name-container-mobile">
-        <img src="assets/profile.jpeg" alt="Profile photo of Igor L.R. Azevedo" class="profile-img-square-mobile">
-        <div class="bio-name-stack-mobile">
-            <span class="name-mobile">Igor L.R. Azevedo</span>
-            <span class="brief-details-mobile">Electrical Engineer</span>
-        </div>
-    </div>
-    <div class="profile-summary-mobile">
-        <div>Master Research AI @ <a class="profile-highlight"
-                                     href="https://www.imperial.ac.uk/computing/prospective-students/courses/pg/mres-artificial-intelligence-and-machine-learning/"
-                                     target="_blank" rel="noopener">Imperial</a></div>
-        <div>Ex-Research Scholar @ <a class="profile-highlight"
-                                      href="https://sites.google.com/view/toyolab/members?authuser=0" target="_blank"
-                                      rel="noopener">UTokyo</a></div>
-        <div>EE @ <a class="profile-highlight" href="https://international.unb.br/" target="_blank" rel="noopener">UnB
-            (Univ. of Brasília)</a></div>
-    </div>
-    <div class="contact-links-mobile">
-        <a href="https://scholar.google.com/citations?user=Ces4TiEAAAAJ&hl=en" target="_blank" title="Google Scholar"
-           aria-label="Google Scholar">
-            <i class="fa-brands fa-google-scholar"></i>
-        </a>
-        <a href="https://substack.com/@igorlrazevedo" target="_blank" title="Substack" aria-label="Substack">
-            <i class="fa-solid fa-newspaper"></i>
-        </a>
-        <a href="https://github.com/igor17400" target="_blank" title="GitHub" aria-label="GitHub">
-            <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/igorlrazevedo" target="_blank" title="LinkedIn" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://x.com/igorlrazevedo" target="_blank" title="Twitter/X" aria-label="Twitter/X">
-            <i class="fa-brands fa-x-twitter"></i>
-        </a>
-        <a href="mailto:igorazevedo@acm.org" title="Email" aria-label="Email">
-            <i class="fa-solid fa-envelope"></i>
-        </a>
-        <a href="./assets/Igor_LR_Azevedo_CV.pdf" target="_blank" title="Curriculum" aria-label="Curriculum">
-            <i class="fa-solid fa-file-lines"></i>
-        </a>
-    </div>
-</section>
-<section class="story-section-mobile" style="max-width: 95vw; margin: 2em auto; padding: 0; display: none;">
+<section class="story-section-mobile" style="max-width: var(--w-page); margin: 2em 1rem; padding: 0; display: none;">
     <blockquote
             style="border-left: 2px solid var(--border); padding: 1.2em 1.5em; margin: 1.5em 1em; font-style: normal;">
         <div style="font-size: 0.9em; line-height: 1.6; color: var(--text);">
@@ -216,7 +176,9 @@
             <h3 class="edu-entry">Imperial College London <span
                     style="float:right; font-size:0.8em; font-weight:normal; font-style:italic">London, UK | Sep 2025 - Sep 2026</span>
             </h3>
-            <em>Artificial Intelligence and Machine Learning Master of Research (MRes)</em>
+            <em>Master of Research (MRes) in Artificial Intelligence and Machine Learning</em>
+            <p><b>Research areas:</b> contrastive deep learning, long-tail learning, generative AI, and large
+                language models.</p>
             <p>Currently being supervised by Professor <a
                     class="profile-highlight" href="https://pmediano.gitlab.io/"
                     target="_blank"><i>Pedro Mediano</i></a> on generative and contrastive deep learning for
@@ -224,9 +186,11 @@
         </div>
         <div>
             <h3 class="edu-entry">University of Brasília (UnB) <span
-                    style="float:right; font-size:0.8em; font-weight:normal; font-style:italic">Brasília, Brazil | Aug 2016 - May 2022</span>
+                    style="float:right; font-size:0.8em; font-weight:normal; font-style:italic">Brasília, Brazil | Aug 2016 - Jun 2022</span>
             </h3>
-            <em>Bachelor of Electrical Engineering</em>
+            <em>Bachelor of Science in Electrical Engineering</em> &mdash; First-Class Honours, GPA 4.35 / 5.0
+            <p><b>Research areas:</b> FPGA co-processors, machine learning for audio codecs, and deep learning for
+                finance.</p>
             <p>Focused on embedded systems, publishing a paper on FPGAs, and later transitioned to Machine Learning for
                 codec optimization and financial markets. Final thesis supervised by Professor <a
                         class="profile-highlight" href="https://scholar.google.com/citations?user=ywUVzLQAAAAJ&hl=en"
@@ -251,7 +215,8 @@
         <ol>
             <li><b>Research Scholar at <a class="profile-highlight"
                                           href="https://sites.google.com/view/toyolab/members"
-                                          target="_blank"><i>The University of Tokyo</i></a></b>
+                                          target="_blank"><i>The University of Tokyo</i></a> &mdash; Graph Neural
+                Network Laboratory</b>
                 <span
                         style="float:right; font-style:italic">Tokyo, Japan | Apr 2023 – Apr 2025</span>
                 <ul>
@@ -267,24 +232,26 @@
                         Led a research partnership with <a class="profile-highlight"
                                                            href="https://nikkei.com/"
                                                            target="_blank"><i>Nikkei Inc.</i></a>,
-                        Japan's largest financial media company (A Financial Times Group Company), analyzing their data
-                        to design and propose
+                        Japan's largest financial media company and owner of the <i>Financial Times</i>, analyzing
+                        their data to design and propose
                         novel recommender system models for user behavior (under Dr. <a class="profile-highlight"
                                                                                         href="https://scholar.google.com/citations?user=Vrki6PQAAAAJ&hl=en"
                                                                                         target="_blank"><i>Yuichiro
                         Yasui</i></a>).
                     </li>
                     <li>
-                        Contributed to foundational LLM research, actively analyzing and debating
-                        state-of-the-art papers on Retrieval-Augmented Generation (RAG) and long-context
-                        handling in weekly lab sessions.
+                        Built LLM systems including multi-agent pipelines, prompt engineering, and long-context
+                        handling with Retrieval-Augmented Generation (RAG).
+                    </li>
+                    <li>
+                        Trained large-scale distributed models on the <i>Wisteria</i> supercomputer.
                     </li>
                     <li>
                         Engineered deep learning models for high-frequency stock price forecasting,
                         with a focus on predicting market behavior during election periods.
                     </li>
                     <li>
-                        Developed POI (Point of Interest) recommender system models during
+                        Implemented Point-of-Interest Graph Neural Network recommendation models during
                         an industry partnership with <a class="profile-highlight"
                                                         href="https://www.tytlabs.co.jp/en/"
                                                         target="_blank"><i>Toyota</i></a>.
@@ -298,10 +265,14 @@
                     <li>Started as a Developer, later promoted to Development Team Lead.</li>
                     <li>Led system integration for VOGA post-acquisition by <a
                             class="profile-highlight" href="https://www.btgpactual.com/" target="_blank">BTG
-                        Pactual</a>, South America's largest investment bank.
+                        Pactual</a>, Latin America's largest bank.
                     </li>
-                    <li>Architected and developed a centralized platform to monitor and track over USD 300 million in
-                        managed assets.
+                    <li>Delivered interactive data solutions and analytics for non-technical stakeholders throughout
+                        the acquisition, using FastAPI and Plotly to build self-service dashboards integrated with
+                        BTG's API.
+                    </li>
+                    <li>Architected a centralized, real-time data ecosystem managing over USD 300 million in
+                        portfolios.
                     </li>
                     <li>Transitioned from full-stack development (Flask/NextJS) to a DevOps role, managing AWS
                         infrastructure (EC2, VPC, RDS, ELB) with Terraform, automating CI/CD with Jenkins, and securing
@@ -313,8 +284,14 @@
                                          target="_blank"><i>Cellcrypt: Quantum-Safe Encrypted Calls</i></a></b> <span
                     style="float:right; font-style:italic">London, UK (Remote) | Sep 2020 – Jun 2021</span>
                 <ul>
-                    <li>Optimized machine learning models to improve VoIP performance by enhancing call quality and
-                        reducing latency.
+                    <li>Advised by Professor <a class="profile-highlight"
+                                                href="https://scholar.google.com/citations?user=ywUVzLQAAAAJ&hl=en"
+                                                target="_blank"><i>Edson Mintsu Hung</i></a> and Dr. <i>Rogério
+                        Richa</i>, improving VoIP call quality by 7% in voice-encrypted systems through automated ML
+                        parameter tuning.
+                    </li>
+                    <li>Analyzed voice quality metrics (MOS, jitter, latency) under varying network and encryption
+                        conditions.
                     </li>
                     <li>Built an ML pipeline for automated <a class="profile-highlight"
                                                               href="https://www.pjsip.org/"
@@ -399,10 +376,8 @@
                                                  href="http://scholar.google.com/citations?user=tY3BWm0AAAAJ&hl=en"
                                                  target="_blank"><i>Toyotaro Suzumura</i></a> (The University of Tokyo)
                     </li>
-                    <li><b>Highlights:</b> Developed POPK, a model which uses temporal-counterfactual analysis to reduce
-                        popularity bias in news recommendations. POPK improves accuracy and diversity by systematically
-                        removing the influence of popular
-                        articles.
+                    <li><b>Highlights:</b> Deep learning models for high-frequency stock price forecasting, focused
+                        on predicting market behaviour during election periods.
                     </li>
                 </ul>
             </li>
@@ -432,6 +407,14 @@
         <h2>AWARDS</h2>
         <hr class="main-separator">
         <ol>
+            <li><b>3rd Place – HackTheLaw, King's College Cambridge</b>
+                <span style="float:right; font-style:italic">June 2026 | <a class="profile-highlight"
+                                                                           href="https://law.stanford.edu/codex-the-stanford-center-for-legal-informatics/"
+                                                                           target="_blank">About</a></span>
+                <br/><u>About</u>: Hosted by the University of Cambridge and Stanford CodeX. Recognized for technical
+                excellence and LLM integration by a panel drawn from academia, industry (Perplexity, Anthropic), and
+                law firms (Clifford Chance and White &amp; Case).
+            </li>
             <li><b>SIAM Travel Award – SDM25</b>
                 <span style="float:right; font-style:italic">
                         <span style="float:right; font-style:italic">May 2025 | <a class="profile-highlight"
@@ -455,7 +438,9 @@
                 <!--                    href="https://drive.google.com/file/d/12XgRPLIR2l0pzgpHLl5nB5CizOoaYf2o/view?usp=sharing"-->
                 <!--                    target="_blank">Certificate</a>-->
                 <br><u>About</u>: The Japanese Government (MEXT) Research Scholarship supports international students
-                conducting research at Japanese higher education institutions.
+                conducting research at Japanese higher education institutions. Approximately 9,000 students are
+                accepted out of 100,000 global applicants (~9% acceptance rate), with full funding for tuition,
+                living expenses, and research activities.
             </li>
             <li><b>Brazilian Government (CNPq) Institutional Scientific Initiation Scholarship
                 (PIBIC)</b> <span
@@ -468,8 +453,10 @@
                 <!--                                         href="https://drive.google.com/file/d/1DYxDgv8LsEpcv7wRMINBS_MF3OtpmMMu/view?usp=sharing"-->
                 <!--                                         target="_blank">Certificate</a>-->
                 <br/>
-                <br/><u>About</u>: The PIBIC program, funded by the Federal Government of Brazil, aims to support
-                undergraduate students in engaging with research, technological development, and innovation.
+                <br/><u>About</u>: The PIBIC program, funded by the Federal Government of Brazil, supports
+                undergraduate students in research, technological development, and innovation. Awarded to the top ~4%
+                of undergraduates nationwide on academic merit; funded research into FPGA-based cryptographic
+                security systems.
             </li>
         </ol>
     </div>
@@ -485,34 +472,25 @@
 
 
     <div id="projects">
-        <h2>PROJECTS</h2>
-        <hr class="main-separator">
-        <ol>
-            <li><b>VISUADL - Bringing Deep Learning Concepts to Life</b><br> Platform dedicated to making deep learning
-                concepts easier to understand through visual animations and simpler explanations. <a
-                        class="profile-highlight" href="https://visuadl.n2sqseries.com/" target="_blank">Website</a>
-            </li>
-            <li><b>N2S - Knowledge Made Accessible</b><br> Open-source platform focused on knowledge dissemination,
-                simplifying deep learning, algorithms, and information theory with clear, visual explanations. <a
-                        class="profile-highlight" href="https://n2sqseries.com/" target="_blank">Website</a>
-            </li>
-            <li><b>Life Before The End</b><br> An open-source platform designed to promote Indigenous awareness and
-                scientific work to support Indigenous communities. <a class="profile-highlight"
-                                                                      href="https://lifebeforetheend.com/"
-                                                                      target="_blank">Website</a>
-            </li>
-        </ol>
-
         <h2>OPEN SOURCE CONTRIBUTIONS</h2>
         <hr class="main-separator">
         <ol>
-            <li><b>NewsReX - <a
-                    class="profile-highlight" href="https://github.com/igor17400/alphadl"
-                    target="_blank">Code</a></b><br> A modular and extensible framework for news recommendation systems
-                research,
-                implementing state-of-the-art models with a focus on reproducibility and ease of use. The framework has
-                been optimized with Keras 3 + JAX backend for enhanced performance through JIT compilation and XLA
-                acceleration.
+            <li><b>NewsReX - <a class="profile-highlight" href="https://github.com/igor17400/NewsReX"
+                                target="_blank" rel="noopener">Code</a> | <a class="profile-highlight"
+                                                                            href="https://huggingface.co/newsrex"
+                                                                            target="_blank"
+                                                                            rel="noopener">Weights</a></b><br>
+                An open-source framework for neural news recommendation, built with <i>The University of Tokyo</i> and
+                <i>Nikkei</i>. I am the first author and wrote the entire implementation, and have maintained it for
+                over a year.
+                <br><br>
+                It is research tooling: models are declared in YAML and composed through <b>Hydra</b>, and run on two
+                backends &mdash; <b>PyTorch</b> and <b>JAX/Flax</b> &mdash; behind a single interface. Cross-framework
+                parity tests verify that both implementations agree numerically before any result is reported, and
+                evaluation is shared and framework-agnostic. Everything is MIT-licensed and every trained weight is
+                public, so results are reproducible by inference alone.
+                <br><br>
+                Shared by <i>François Chollet</i>, the creator of Keras.
             </li>
             <li><b>AlphaDL - <a
                     class="profile-highlight" href="https://github.com/igor17400/alphadl"
@@ -609,7 +587,7 @@
             <div class="language-item">
                 <div class="language-info">
                     <span class="language-name">Spanish</span>
-                    <span class="language-level">Limited</span>
+                    <span class="language-level">Conversational</span>
                 </div>
                 <div class="language-bar">
                     <div class="language-progress" style="width: 50%"></div>
@@ -672,106 +650,43 @@
     </div>
 </main>
 <script>
-    const btn = document.getElementById('theme-toggle');
-    btn.addEventListener('click', () => {
+    // Theme
+    document.getElementById('theme-toggle').addEventListener('click', () => {
         document.body.classList.toggle('dark');
     });
 
-    // Hamburger menu functionality
+    // Mobile nav. Scrolling is native: html{scroll-behavior:smooth} + [id]{scroll-margin-top}.
     const navToggle = document.getElementById('nav-toggle');
     const nav = document.querySelector('nav');
-
-    if (navToggle && nav) {
-        navToggle.addEventListener('click', function () {
-            const isOpen = nav.classList.toggle('open');
-            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-        });
-
-        nav.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetId = link.getAttribute('href');
-
-                // Special handling for bio link
-                if (targetId === '#bio') {
-                    // Check if we're on mobile
-                    if (window.innerWidth <= 700) {
-                        const element = document.querySelector('#bio-mobile');
-                        const offset = 80; // Adjust this value as needed
-                        const elementPosition = element.getBoundingClientRect().top;
-                        const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-                        window.scrollTo({
-                            top: offsetPosition,
-                            behavior: 'smooth'
-                        });
-                    } else {
-                        const element = document.querySelector('#bio');
-                        const offset = 80; // Adjust this value as needed
-                        const elementPosition = element.getBoundingClientRect().top;
-                        const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-                        window.scrollTo({
-                            top: offsetPosition,
-                            behavior: 'smooth'
-                        });
-                    }
-                } else {
-                    // Normal handling for other links
-                    const targetSection = document.querySelector(targetId);
-                    if (targetSection) {
-                        const offset = 80; // Adjust this value as needed
-                        const elementPosition = targetSection.getBoundingClientRect().top;
-                        const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-                        window.scrollTo({
-                            top: offsetPosition,
-                            behavior: 'smooth'
-                        });
-                    }
-                }
-
-                // Close mobile menu if open
-                setTimeout(() => {
-                    nav.classList.remove('open');
-                    navToggle.setAttribute('aria-expanded', 'false');
-                }, 100);
-            });
-        });
-    }
-
-    // Email copy functionality
-    const emailLink = document.getElementById('email-link');
-    if (emailLink) {
-        emailLink.addEventListener('click', function (e) {
-            e.preventDefault();
-            const email = 'igorazevedo@acm.org';
-            navigator.clipboard.writeText(email).then(() => {
-                emailLink.textContent = 'Copied!';
-                setTimeout(() => {
-                    emailLink.textContent = email;
-                }, 1200);
-            });
-        });
-    }
-
-    // Opaque navbar on scroll (desktop only)
-    function handleNavOpacity() {
-        const nav = document.querySelector('nav');
-        if (window.innerWidth > 700) { // Only on desktop
-            if (window.scrollY > 10) {
-                nav.classList.add('opaque');
-            } else {
-                nav.classList.remove('opaque');
-            }
-        } else {
-            nav.classList.remove('opaque'); // Always transparent on mobile
+    navToggle.addEventListener('click', () => {
+        navToggle.setAttribute('aria-expanded', nav.classList.toggle('open'));
+    });
+    nav.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A') {
+            nav.classList.remove('open');
+            navToggle.setAttribute('aria-expanded', 'false');
         }
-    }
+    });
 
-    window.addEventListener('scroll', handleNavOpacity);
-    window.addEventListener('resize', handleNavOpacity);
-    document.addEventListener('DOMContentLoaded', handleNavOpacity);
+    // Copy email. Swap the inner span so the element itself survives.
+    const emailLink = document.getElementById('email-link');
+    const emailLabel = emailLink.querySelector('span');
+    emailLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        navigator.clipboard.writeText(emailLabel.textContent).then(() => {
+            const original = emailLabel.textContent;
+            emailLabel.textContent = 'Copied';
+            setTimeout(() => { emailLabel.textContent = original; }, 1200);
+        });
+    });
+
+    // Opaque navbar once scrolled (desktop only)
+    const setNavOpacity = () => {
+        nav.classList.toggle('opaque', window.innerWidth > 700 && window.scrollY > 10);
+    };
+    addEventListener('scroll', setNavOpacity, {passive: true});
+    addEventListener('resize', setNavOpacity);
+    setNavOpacity();
 </script>
 </body>
 
