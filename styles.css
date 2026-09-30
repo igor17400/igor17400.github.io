@@ -500,10 +500,14 @@ body.dark .card-modal__actions .btn {
 }
 
 .rail__actions {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;   /* Resume + CV share a row */
     gap: var(--s-2);
     margin-top: var(--s-4);
+}
+
+#email-link {
+    grid-column: 1 / -1;
 }
 
 .btn {
@@ -1056,13 +1060,6 @@ a.profile-highlight {
     }
     .rail__index a .n {
         display: none;
-    }
-    .rail__actions {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .rail__actions .btn {
-        flex: 1 1 auto;
     }
     .content {
         padding: var(--s-10) var(--s-5) var(--s-16);
