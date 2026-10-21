@@ -1,775 +1,1332 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description"
-          content="Master of Research @ Imperial College London | Ex-Research Assistant @ The University of Tokyo"/>
-    <meta name="author" content="Igor Lima Rocha Azevedo"/>
-    <meta name="keywords" content="Igor Lima Rocha Azevedo, Electrical Engineer, Machine Learning Researcher, Academic Profile"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Master of Research @ Imperial College London | Ex-Research Assistant @ The University of Tokyo"
+    />
+    <meta name="author" content="Igor Lima Rocha Azevedo" />
+    <meta
+      name="keywords"
+      content="Igor Lima Rocha Azevedo, Electrical Engineer, Machine Learning Researcher, Academic Profile"
+    />
     <title>Igor L.R. Azevedo</title>
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/1/18/Five-pointed_star.svg"
-          type="image/svg+xml"/>
-    <link rel="apple-touch-icon" href="https://igorazevedo.com/apple-touch-icon.png"/>
-    <link rel="icon" sizes="192x192" href="https://igorazevedo.com/icon-192.png">
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/1/18/Five-pointed_star.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://igorazevedo.com/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="https://igorazevedo.com/icon-192.png"
+    />
     <!-- Bump ?v= on every CSS change: Cloudflare caches styles.css for 4h and will
          otherwise serve a stale stylesheet against fresh HTML. -->
-    <link rel="stylesheet" href="styles.css?v=3"/>
-</head>
+    <link rel="stylesheet" href="styles.css?v=3" />
+  </head>
 
-<body>
-<button id="theme-toggle" title="Toggle light/dark mode" aria-label="Toggle light/dark mode">Theme</button>
-<svg class="sprite" aria-hidden="true" focusable="false"><defs>
-    <symbol id="i-scholar" viewBox="0 0 24 24">
-        <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
-    </symbol>
-    <symbol id="i-github" viewBox="0 0 24 24">
-        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-    </symbol>
-    <symbol id="i-linkedin" viewBox="0 0 24 24">
-        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
-    </symbol>
-    <symbol id="i-substack" viewBox="0 0 24 24">
-        <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
-    </symbol>
-    <symbol id="i-share" viewBox="0 0 24 24">
-        <path d="M18 16.08a2.9 2.9 0 0 0-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 1 0-3-3c0 .24.04.47.09.7L8.04 9.81A2.99 2.99 0 0 0 6 9a3 3 0 1 0 0 6c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.8.43-.8.65A2.92 2.92 0 1 0 18 16.08z"/>
-    </symbol>
-    <symbol id="i-x" viewBox="0 0 24 24">
-        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
-    </symbol>
-</defs></svg>
-<canvas class="walker" aria-hidden="true"></canvas>
-<div class="shell">
-
-    <aside class="rail">
-        <img src="assets/profile.jpeg" alt="Igor L.R. Azevedo" class="rail__portrait" width="108" height="108">
+  <body>
+    <button
+      id="theme-toggle"
+      title="Toggle light/dark mode"
+      aria-label="Toggle light/dark mode"
+    >
+      Theme
+    </button>
+    <svg class="sprite" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="i-scholar" viewBox="0 0 24 24">
+          <path
+            d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"
+          />
+        </symbol>
+        <symbol id="i-github" viewBox="0 0 24 24">
+          <path
+            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+          />
+        </symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24">
+          <path
+            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
+          />
+        </symbol>
+        <symbol id="i-substack" viewBox="0 0 24 24">
+          <path
+            d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"
+          />
+        </symbol>
+        <symbol id="i-share" viewBox="0 0 24 24">
+          <path
+            d="M18 16.08a2.9 2.9 0 0 0-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 1 0-3-3c0 .24.04.47.09.7L8.04 9.81A2.99 2.99 0 0 0 6 9a3 3 0 1 0 0 6c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.8.43-.8.65A2.92 2.92 0 1 0 18 16.08z"
+          />
+        </symbol>
+        <symbol id="i-x" viewBox="0 0 24 24">
+          <path
+            d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+          />
+        </symbol>
+      </defs>
+    </svg>
+    <canvas class="walker" aria-hidden="true"></canvas>
+    <div class="shell">
+      <aside class="rail">
+        <img
+          src="assets/profile.jpeg"
+          alt="Igor L.R. Azevedo"
+          class="rail__portrait"
+          width="108"
+          height="108"
+        />
         <h1 class="rail__name">Igor L.R. Azevedo</h1>
         <p class="rail__role label">Electrical Engineer</p>
 
-
         <dl class="rail__track">
-            <div>
-                <dt>2025 — 26</dt>
-                <dd><a href="https://www.imperial.ac.uk/computing/prospective-students/courses/pg/mres-artificial-intelligence-and-machine-learning/"
-                       target="_blank" rel="noopener">Imperial College London</a> <span class="flag">🇬🇧</span>
-                    <span class="rail__sub">Master of Research, AI &amp; ML · Contrastive Learning &amp; Mixture of Experts</span></dd>
-            </div>
-            <div>
-                <dt>2023 — 25</dt>
-                <dd><a href="https://sites.google.com/view/toyolab/members" target="_blank" rel="noopener">The
-                    University of Tokyo</a> <span class="flag">🇯🇵</span>
-                    <span class="rail__sub">Research Assistant · Toyota &amp; Nikkei</span></dd>
-            </div>
-            <div>
-                <dt>2016 — 22</dt>
-                <dd><a href="https://international.unb.br/" target="_blank" rel="noopener">University of Brasília</a> <span class="flag">🇧🇷</span>
-                    <span class="rail__sub">BSc EE · First-Class Honours</span></dd>
-            </div>
+          <div>
+            <dt>2025 — 26</dt>
+            <dd>
+              <a
+                href="https://www.imperial.ac.uk/computing/prospective-students/courses/pg/mres-artificial-intelligence-and-machine-learning/"
+                target="_blank"
+                rel="noopener"
+                >Imperial College London</a
+              >
+              <span class="flag">🇬🇧</span>
+              <span class="rail__sub"
+                >Master of Research, AI &amp; ML · Contrastive Learning &amp;
+                Mixture of Experts</span
+              >
+            </dd>
+          </div>
+          <div>
+            <dt>2023 — 25</dt>
+            <dd>
+              <a
+                href="https://sites.google.com/view/toyolab/members"
+                target="_blank"
+                rel="noopener"
+                >The University of Tokyo</a
+              >
+              <span class="flag">🇯🇵</span>
+              <span class="rail__sub"
+                >Research Assistant · Toyota &amp; Nikkei</span
+              >
+            </dd>
+          </div>
+          <div>
+            <dt>2016 — 22</dt>
+            <dd>
+              <a
+                href="https://international.unb.br/"
+                target="_blank"
+                rel="noopener"
+                >University of Brasília</a
+              >
+              <span class="flag">🇧🇷</span>
+              <span class="rail__sub">BSc EE · First-Class Honours</span>
+            </dd>
+          </div>
         </dl>
 
-        <p class="rail__traits">High agency, hard worker, drawn to real problems.</p>
+        <p class="rail__traits">
+          High agency, hard worker, drawn to real problems.
+        </p>
 
         <nav class="rail__index label" aria-label="Sections">
-            <a href="#education"><span class="n">01</span> Education</a>
-            <a href="#experience"><span class="n">02</span> Experience</a>
-            <a href="#papers"><span class="n">03</span> Research Papers</a>
-            <a href="#honours"><span class="n">04</span> Honours</a>
-            <a href="#awards"><span class="n">05</span> Awards</a>
-            <a href="#competitions"><span class="n">06</span> Competitions</a>
-            <a href="#projects"><span class="n">07</span> Open Source</a>
-            <a href="#essentials"><span class="n">08</span> Essentials</a>
+          <a href="#education"><span class="n">01</span> Education</a>
+          <a href="#experience"><span class="n">02</span> Experience</a>
+          <a href="#papers"><span class="n">03</span> Research Papers</a>
+          <a href="#honours"><span class="n">04</span> Honours</a>
+          <a href="#awards"><span class="n">05</span> Awards</a>
+          <a href="#competitions"><span class="n">06</span> Competitions</a>
+          <a href="#projects"><span class="n">07</span> Open Source</a>
+          <a href="#essentials"><span class="n">08</span> Essentials</a>
         </nav>
 
         <div class="rail__links">
-            <a href="https://scholar.google.com/citations?user=Ces4TiEAAAAJ&hl=en" target="_blank" rel="noopener"
-               aria-label="Google Scholar" title="Google Scholar"><svg class="ico"><use href="#i-scholar"/></svg></a>
-            <a href="https://github.com/igor17400" target="_blank" rel="noopener"
-               aria-label="GitHub" title="GitHub"><svg class="ico"><use href="#i-github"/></svg></a>
-            <a href="https://www.linkedin.com/in/igorlrazevedo" target="_blank" rel="noopener"
-               aria-label="LinkedIn" title="LinkedIn"><svg class="ico"><use href="#i-linkedin"/></svg></a>
-            <a href="https://substack.com/@igorlrazevedo" target="_blank" rel="noopener"
-               aria-label="Substack" title="Substack"><svg class="ico"><use href="#i-substack"/></svg></a>
-            <a href="https://x.com/igorlrazevedo" target="_blank" rel="noopener"
-               aria-label="Twitter (X)" title="Twitter (X)"><svg class="ico"><use href="#i-x"/></svg></a>
-            <button type="button" id="share-card" class="rail__share"
-                    aria-label="Share profile card" title="Share profile card"><svg class="ico"><use
-                    href="#i-share"/></svg></button>
+          <a
+            href="https://scholar.google.com/citations?user=Ces4TiEAAAAJ&hl=en"
+            target="_blank"
+            rel="noopener"
+            aria-label="Google Scholar"
+            title="Google Scholar"
+            ><svg class="ico"><use href="#i-scholar" /></svg
+          ></a>
+          <a
+            href="https://github.com/igor17400"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            title="GitHub"
+            ><svg class="ico"><use href="#i-github" /></svg
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/igorlrazevedo"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            title="LinkedIn"
+            ><svg class="ico"><use href="#i-linkedin" /></svg
+          ></a>
+          <a
+            href="https://substack.com/@igorlrazevedo"
+            target="_blank"
+            rel="noopener"
+            aria-label="Substack"
+            title="Substack"
+            ><svg class="ico"><use href="#i-substack" /></svg
+          ></a>
+          <a
+            href="https://x.com/igorlrazevedo"
+            target="_blank"
+            rel="noopener"
+            aria-label="Twitter (X)"
+            title="Twitter (X)"
+            ><svg class="ico"><use href="#i-x" /></svg
+          ></a>
+          <button
+            type="button"
+            id="share-card"
+            class="rail__share"
+            aria-label="Share profile card"
+            title="Share profile card"
+          >
+            <svg class="ico"><use href="#i-share" /></svg>
+          </button>
         </div>
 
         <div class="rail__actions">
-            <a href="mailto:igorazevedo@acm.org" class="btn" id="email-link"><span>igorazevedo@acm.org</span></a>
-            <a href="./assets/Igor_Azevedo_Resume.pdf" class="btn" target="_blank" rel="noopener">Resume</a>
-            <a href="./assets/Igor_Azevedo_CV.pdf" class="btn" target="_blank" rel="noopener">CV</a>
+          <a href="mailto:igorazevedo@acm.org" class="btn" id="email-link"
+            ><span>igorazevedo@acm.org</span></a
+          >
+          <a
+            href="./assets/Igor_Azevedo_Resume.pdf"
+            class="btn"
+            target="_blank"
+            rel="noopener"
+            >Resume</a
+          >
+          <a
+            href="./assets/Igor_Azevedo_CV.pdf"
+            class="btn"
+            target="_blank"
+            rel="noopener"
+            >CV</a
+          >
         </div>
-        <p class="rail__sub">Em português: <a href="./assets/Igor_Azevedo_Resume_PTBR.pdf" target="_blank" rel="noopener">Currículo resumido</a> · <a href="./assets/Igor_Azevedo_CV_PTBR.pdf" target="_blank" rel="noopener">Currículo completo</a></p>
+        <p class="rail__sub">
+          Em português:
+          <a
+            href="./assets/Igor_Azevedo_Resume_PTBR.pdf"
+            target="_blank"
+            rel="noopener"
+            >Currículo resumido</a
+          >
+          ·
+          <a
+            href="./assets/Igor_Azevedo_CV_PTBR.pdf"
+            target="_blank"
+            rel="noopener"
+            >Currículo completo</a
+          >
+        </p>
+      </aside>
 
-    </aside>
-
-    <main class="content">
+      <main class="content">
         <div class="story">
-            <p>Igor is an AI researcher and engineer who turns machine learning research into production systems. At
-                the University of Tokyo, they worked with Nikkei, owner of the Financial Times, building news
-                recommenders and multi-agent LLM pipelines that mine reader behaviour. That work produced a model that
-                learns from the news readers avoid (SIAM SDM 2025) and NewsReX, an open-source framework that trains
-                news recommenders up to 2.8x faster (CIKM 2026). With Toyota, they researched graph-based
-                recommendation for in-car systems that predicts where drivers will go next. Before that, they led
-                engineering at VOGA through its acquisition by BTG Pactual, Latin America's largest investment bank,
-                and architected a real-time AWS data platform monitoring over USD 300M in client assets. They are now
-                completing a Master of Research in AI and Machine Learning at Imperial College London, studying why
-                contrastive and mixture-of-experts models collapse when data is scarce.</p>
+          <p>
+            I started out as an electrical engineer, and I still think like one:
+            a model is only as good as the system around it. I learned that in
+            industry. At VOGA, I went from intern to team lead in under two
+            years. I led seven engineers through the company's acquisition by
+            BTG Pactual, Latin America's largest investment bank, and designed
+            the real-time portfolio platform that tracked over USD 300M in
+            client investments. The more I built, the more I wanted to study AI
+            itself, so I earned a Japanese Government (MEXT) scholarship and
+            moved to Tokyo. At the University of Tokyo, I worked side by side
+            with Nikkei, owner of the Financial Times, on how millions of people
+            really read the news. I built news recommenders that treat the
+            stories readers avoid as implicit negative feedback to counter
+            popularity bias, multi-agent LLM pipelines that use
+            retrieval-augmented generation to extract reader behaviour patterns,
+            and NewsReX, an open-source JAX and PyTorch framework for
+            reproducible news recommendation research. With Toyota, I turned GPS
+            vehicle telemetry into trajectories and user–place graphs, then
+            trained graph neural networks for next-destination prediction,
+            benchmarking them against a range of baselines on Toyota's
+            proprietary driving data. Most recently, I completed a Master of
+            Research in AI and Machine Learning at Imperial College London,
+            where I studied why contrastive learning and mixture-of-experts
+            models collapse when data is scarce.
+          </p>
         </div>
 
-    <section class="section" id="education">
-        <header class="sec__head">
+        <section class="section" id="education">
+          <header class="sec__head">
             <span class="sec__num">01</span>
             <h2 class="sec__title">Education</h2>
-        </header>
-        <article class="entry">
-            <p class="entry__when">Sep 2025 — Sep 2026<span>London, UK</span></p>
+          </header>
+          <article class="entry">
+            <p class="entry__when">
+              Sep 2025 — Sep 2026<span>London, UK</span>
+            </p>
             <div class="entry__body">
-                <h3 class="entry__title">Imperial College London</h3>
-                <p class="entry__sub">Master of Research (MRes), Artificial Intelligence &amp; Machine Learning</p>
-                <p><b>Research areas:</b> Contrastive Representation Learning, Long-Tailed Learning, Mixture of Experts, and LLMs.</p>
-                <p>Thesis <i>A Minority of One: Binary Imbalance beyond Long-Tail Learning</i>, supervised by Professor <a
-                        href="https://pmediano.gitlab.io/" target="_blank" rel="noopener">Pedro Mediano</a>. Researched
-                    multimodal representation collapse in contrastive learning and mixture-of-experts models under data
-                    scarcity, and investigated expert collapse in mixture-of-experts routing when minority classes are
-                    scarce.</p>
+              <h3 class="entry__title">Imperial College London</h3>
+              <p class="entry__sub">
+                Master of Research (MRes), Artificial Intelligence &amp; Machine
+                Learning
+              </p>
+              <p>
+                <b>Research areas:</b> Contrastive Representation Learning,
+                Long-Tailed Learning, Mixture of Experts, and LLMs.
+              </p>
+              <p>
+                Thesis
+                <i
+                  >A Minority of One: Binary Imbalance beyond Long-Tail
+                  Learning</i
+                >, supervised by Professor
+                <a
+                  href="https://pmediano.gitlab.io/"
+                  target="_blank"
+                  rel="noopener"
+                  >Pedro Mediano</a
+                >. Researched multimodal representation collapse in contrastive
+                learning and mixture-of-experts models under data scarcity, and
+                investigated expert collapse in mixture-of-experts routing when
+                minority classes are scarce.
+              </p>
             </div>
-        </article>
-        <article class="entry">
-            <p class="entry__when">Aug 2016 — Jun 2022<span>Brasília, Brazil</span></p>
+          </article>
+          <article class="entry">
+            <p class="entry__when">
+              Aug 2016 — Jun 2022<span>Brasília, Brazil</span>
+            </p>
             <div class="entry__body">
-                <h3 class="entry__title">University of Brasília (UnB)</h3>
-                <p class="entry__sub">BSc Electrical Engineering — First-Class Honours, GPA 4.35 / 5.0</p>
-                <p><b>Research areas:</b> FPGA co-processors, machine learning for audio codecs, and deep learning for
-                    finance.</p>
-                <p>Undergraduate research on FPGA hardware acceleration of SHA-3 cryptography for low-power IoT devices,
-                    funded by PIBIC/CNPq and supervised by Professor <a href="https://scholar.google.com.br/citations?user=n7DfWz4AAAAJ&hl=en" target="_blank" rel="noopener">Alexandre S. Nery</a>. Final thesis applying machine
-                    learning to financial market prediction, supervised by Professor <a
-                            href="https://scholar.google.com/citations?user=ywUVzLQAAAAJ&hl=en" target="_blank"
-                            rel="noopener">Edson Mintsu Hung</a>.</p>
+              <h3 class="entry__title">University of Brasília (UnB)</h3>
+              <p class="entry__sub">
+                BSc Electrical Engineering — First-Class Honours, GPA 4.35 / 5.0
+              </p>
+              <p>
+                <b>Research areas:</b> FPGA co-processors, machine learning for
+                audio codecs, and deep learning for finance.
+              </p>
+              <p>
+                Undergraduate research on FPGA hardware acceleration of SHA-3
+                cryptography for low-power IoT devices, funded by PIBIC/CNPq and
+                supervised by Professor
+                <a
+                  href="https://scholar.google.com.br/citations?user=n7DfWz4AAAAJ&hl=en"
+                  target="_blank"
+                  rel="noopener"
+                  >Alexandre S. Nery</a
+                >. Final thesis applying machine learning to financial market
+                prediction, supervised by Professor
+                <a
+                  href="https://scholar.google.com/citations?user=ywUVzLQAAAAJ&hl=en"
+                  target="_blank"
+                  rel="noopener"
+                  >Edson Mintsu Hung</a
+                >.
+              </p>
             </div>
-        </article>
-        <article class="entry">
-            <p class="entry__when">Jan 2017 — Dec 2018<span>Brasília, Brazil</span></p>
+          </article>
+          <article class="entry">
+            <p class="entry__when">
+              Jan 2017 — Dec 2018<span>Brasília, Brazil</span>
+            </p>
             <div class="entry__body">
-                <h3 class="entry__title">University Center of Brasília (CEUB)</h3>
-                <p class="entry__sub">Associate Degree, Systems Analysis &amp; Development</p>
-                <p>Concentrated on Java development, particularly real-time tracking systems, with a final thesis on a
-                    pharmacy delivery application under the guidance of Professor <a
-                            href="https://scholar.google.com/citations?user=qMjetUQAAAAJ&hl=en" target="_blank"
-                            rel="noopener">Auto Tavares</a>.</p>
+              <h3 class="entry__title">University Center of Brasília (CEUB)</h3>
+              <p class="entry__sub">
+                Associate Degree, Systems Analysis &amp; Development
+              </p>
+              <p>
+                Concentrated on Java development, particularly real-time
+                tracking systems, with a final thesis on a pharmacy delivery
+                application under the guidance of Professor
+                <a
+                  href="https://scholar.google.com/citations?user=qMjetUQAAAAJ&hl=en"
+                  target="_blank"
+                  rel="noopener"
+                  >Auto Tavares</a
+                >.
+              </p>
             </div>
-        </article>
-    </section>
+          </article>
+        </section>
 
-    <section class="section" id="experience">
-        <header class="sec__head">
+        <section class="section" id="experience">
+          <header class="sec__head">
             <span class="sec__num">02</span>
             <h2 class="sec__title">Experience</h2>
-        </header>
-        <article class="entry">
-            <p class="entry__when">Apr 2023 — Apr 2025<span>Tokyo, Japan</span></p>
+          </header>
+          <article class="entry">
+            <p class="entry__when">
+              Apr 2023 — Apr 2025<span>Tokyo, Japan</span>
+            </p>
             <div class="entry__body">
-                <h3 class="entry__title">The University of Tokyo</h3>
-                <p class="entry__sub">Research Assistant · supervised by Prof. <a href="http://scholar.google.com/citations?user=tY3BWm0AAAAJ&hl=en"
-                        target="_blank" rel="noopener">Toyotaro Suzumura</a> and Dr. <a
-                        href="https://scholar.google.com/citations?user=Vrki6PQAAAAJ&hl=en" target="_blank"
-                        rel="noopener">Yuichiro Yasui</a></p>
-                <p><b><a href="https://nikkei.com/" target="_blank" rel="noopener">Nikkei</a> (Financial Times)
-                    collaboration, news recommendation</b> <span class="meta">Aug 2023 – Apr 2025</span></p>
-                <ul>
-                    <li>Built data pipelines and feature engineering over Nikkei user interaction logs to train news
-                        recommendation models.</li>
-                    <li>Modelled user behaviour and implicit negative feedback (news avoidance) with candidate-aware
-                        attention to mitigate popularity bias, accepted at SIAM SDM 2025.</li>
-                    <li>Built NewsReX, a dual-backend PyTorch/JAX framework for reproducible news recommendation with up
-                        to 2.8x faster training, accepted at CIKM 2026.</li>
-                    <li>Built multi-agent LLM pipelines (Strands Agents) with agentic retrieval, local open-weight LLMs
-                        and retrieval-augmented generation to extract user behaviour patterns, evaluated with
-                        LLM-as-judge.</li>
-                </ul>
-                <p><b><a href="https://www.tytlabs.co.jp/en/" target="_blank" rel="noopener">Toyota</a> collaboration,
-                    mobility and point-of-interest recommendation</b> <span class="meta">Apr 2023 – Aug 2023</span></p>
-                <ul>
-                    <li>Processed GPS vehicle telemetry into trajectories and user–place graphs for next-destination
-                        prediction.</li>
-                    <li>Implemented graph neural networks and the lab's published methods in PyTorch to model driver
-                        mobility.</li>
-                    <li>Designed the benchmark against a range of baselines on Toyota's proprietary data and presented
-                        the findings.</li>
-                </ul>
+              <h3 class="entry__title">The University of Tokyo</h3>
+              <p class="entry__sub">
+                Research Assistant · supervised by Prof.
+                <a
+                  href="http://scholar.google.com/citations?user=tY3BWm0AAAAJ&hl=en"
+                  target="_blank"
+                  rel="noopener"
+                  >Toyotaro Suzumura</a
+                >
+                and Dr.
+                <a
+                  href="https://scholar.google.com/citations?user=Vrki6PQAAAAJ&hl=en"
+                  target="_blank"
+                  rel="noopener"
+                  >Yuichiro Yasui</a
+                >
+              </p>
+              <p>
+                <b
+                  ><a href="https://nikkei.com/" target="_blank" rel="noopener"
+                    >Nikkei</a
+                  >
+                  (Financial Times) collaboration, news recommendation</b
+                >
+                <span class="meta">Aug 2023 – Apr 2025</span>
+              </p>
+              <ul>
+                <li>
+                  Built data pipelines and feature engineering over Nikkei user
+                  interaction logs to train news recommendation models.
+                </li>
+                <li>
+                  Modelled user behaviour and implicit negative feedback (news
+                  avoidance) with candidate-aware attention to mitigate
+                  popularity bias, accepted at SIAM SDM 2025.
+                </li>
+                <li>
+                  Built NewsReX, a dual-backend PyTorch/JAX framework for
+                  reproducible news recommendation with up to 2.8x faster
+                  training, accepted at CIKM 2026.
+                </li>
+                <li>
+                  Built multi-agent LLM pipelines (Strands Agents) with agentic
+                  retrieval, local open-weight LLMs and retrieval-augmented
+                  generation to extract user behaviour patterns, evaluated with
+                  LLM-as-judge.
+                </li>
+              </ul>
+              <p>
+                <b
+                  ><a
+                    href="https://www.tytlabs.co.jp/en/"
+                    target="_blank"
+                    rel="noopener"
+                    >Toyota</a
+                  >
+                  collaboration, mobility and point-of-interest
+                  recommendation</b
+                >
+                <span class="meta">Apr 2023 – Aug 2023</span>
+              </p>
+              <ul>
+                <li>
+                  Processed GPS vehicle telemetry into trajectories and
+                  user–place graphs for next-destination prediction.
+                </li>
+                <li>
+                  Implemented graph neural networks and the lab's published
+                  methods in PyTorch to model driver mobility.
+                </li>
+                <li>
+                  Designed the benchmark against a range of baselines on
+                  Toyota's proprietary data and presented the findings.
+                </li>
+              </ul>
             </div>
-        </article>
-        <article class="entry">
-            <p class="entry__when">Jul 2021 — Apr 2023<span>Brasília, Brazil</span></p>
+          </article>
+          <article class="entry">
+            <p class="entry__when">
+              Jul 2021 — Apr 2023<span>Brasília, Brazil</span>
+            </p>
             <div class="entry__body">
-                <h3 class="entry__title"><a href="https://voga.com.br/" target="_blank" rel="noopener">VOGA</a>, acquired
-                    by <a href="https://www.btgpactual.com/" target="_blank" rel="noopener">BTG Pactual</a></h3>
-                <p class="entry__sub">Intern → Developer → Development Team Lead</p>
-                <ul>
-                    <li>Architected a real-time portfolio data platform (Flask, Next.js, PostgreSQL) monitoring over USD
-                        300M in client assets.</li>
-                    <li>Built cloud infrastructure as code on AWS (ECS, RDS, EC2) with Terraform, Docker and Jenkins
-                        CI/CD.</li>
-                    <li>Automated reporting workflows into ETL pipelines and self-service dashboards.</li>
-                    <li>Led a team of 7 engineers through the post-acquisition integration into BTG Pactual, Latin
-                        America's largest investment bank.</li>
-                </ul>
+              <h3 class="entry__title">
+                <a href="https://voga.com.br/" target="_blank" rel="noopener"
+                  >VOGA</a
+                >, acquired by
+                <a
+                  href="https://www.btgpactual.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >BTG Pactual</a
+                >
+              </h3>
+              <p class="entry__sub">
+                Intern → Developer → Development Team Lead
+              </p>
+              <ul>
+                <li>
+                  Architected a real-time portfolio data platform (Flask,
+                  Next.js, PostgreSQL) monitoring over USD 300M in client
+                  assets.
+                </li>
+                <li>
+                  Built cloud infrastructure as code on AWS (ECS, RDS, EC2) with
+                  Terraform, Docker and Jenkins CI/CD.
+                </li>
+                <li>
+                  Automated reporting workflows into ETL pipelines and
+                  self-service dashboards.
+                </li>
+                <li>
+                  Led a team of 7 engineers through the post-acquisition
+                  integration into BTG Pactual, Latin America's largest
+                  investment bank.
+                </li>
+              </ul>
             </div>
-        </article>
-        <article class="entry">
-            <p class="entry__when">Sep 2020 — Jul 2021<span>London, UK (Remote)</span></p>
+          </article>
+          <article class="entry">
+            <p class="entry__when">
+              Sep 2020 — Jul 2021<span>London, UK (Remote)</span>
+            </p>
             <div class="entry__body">
-                <h3 class="entry__title"><a href="https://www.cellcrypt.com/" target="_blank" rel="noopener">Cellcrypt
-                    Inc.</a> — Advanced Security Systems</h3>
-                <p class="entry__sub">Applied Machine Learning Intern · supervised by Prof. <a
-                        href="https://scholar.google.com/citations?user=ywUVzLQAAAAJ&hl=en" target="_blank"
-                        rel="noopener">Edson Mintsu Hung</a></p>
-                <ul>
-                    <li>Built an ML training and inference pipeline on AWS EC2 that tunes VoIP codecs, improving call
-                        quality by 7%.</li>
-                    <li>Analysed packet captures (Wireshark) and call logs to diagnose quality loss in encrypted calls.
-                    </li>
-                    <li>Built a C++ VoIP testbed (<a href="https://www.pjsip.org/" target="_blank" rel="noopener">PJSIP</a>,
-                        Opus, G.711) for codec experimentation.</li>
-                </ul>
+              <h3 class="entry__title">
+                <a
+                  href="https://www.cellcrypt.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >Cellcrypt Inc.</a
+                >
+                — Advanced Security Systems
+              </h3>
+              <p class="entry__sub">
+                Applied Machine Learning Intern · supervised by Prof.
+                <a
+                  href="https://scholar.google.com/citations?user=ywUVzLQAAAAJ&hl=en"
+                  target="_blank"
+                  rel="noopener"
+                  >Edson Mintsu Hung</a
+                >
+              </p>
+              <ul>
+                <li>
+                  Built an ML training and inference pipeline on AWS EC2 that
+                  tunes VoIP codecs, improving call quality by 7%.
+                </li>
+                <li>
+                  Analysed packet captures (Wireshark) and call logs to diagnose
+                  quality loss in encrypted calls.
+                </li>
+                <li>
+                  Built a C++ VoIP testbed (<a
+                    href="https://www.pjsip.org/"
+                    target="_blank"
+                    rel="noopener"
+                    >PJSIP</a
+                  >, Opus, G.711) for codec experimentation.
+                </li>
+              </ul>
             </div>
-        </article>
-    </section>
+          </article>
+        </section>
 
-    <section class="section" id="papers">
-        <header class="sec__head">
+        <section class="section" id="papers">
+          <header class="sec__head">
             <span class="sec__num">03</span>
             <h2 class="sec__title">Research Papers</h2>
-        </header>
+          </header>
 
-        <ol>
-            <li><b>A Look Into News Avoidance Through AWRS: An Avoidance-Aware Recommender System</b><br>
-                <span style="font-style:italic">January - July 2024</span> | <a class="profile-highlight"
-                                                                                href="https://epubs.siam.org/doi/10.1137/1.9781611978520.18"
-                                                                                target="_blank">SDM'25
-                    Proceedings</a> | <a class="profile-highlight" href="https://arxiv.org/abs/2407.09137"
-                                         target="_blank">ArXiv</a>
-                <ul>
-                    <li><b>Collaboration:</b> <a class="profile-highlight"
-                                                 href="http://scholar.google.com/citations?user=tY3BWm0AAAAJ&hl=en"
-                                                 target="_blank"><i>Toyotaro Suzumura</i></a> (The University of Tokyo)
-                        and <a class="profile-highlight"
-                               href="https://scholar.google.com/citations?user=Vrki6PQAAAAJ&hl=en"
-                               target="_blank"><i>Yuichiro Yasui</i></a> (Nikkei Inc.)
-                    </li>
-                    <li><b>Highlights:</b> Developed AWRS, an Avoidance-Aware Recommender System for news that
-                        incorporates article avoidance as a key factor to improve recommendations. Evaluated on datasets
-                        in English, Norwegian, and Japanese, AWRS outperformed
-                        existing methods by leveraging avoidance as an indicator of user preferences.
-                    </li>
-                </ul>
+          <ol>
+            <li>
+              <b
+                >A Look Into News Avoidance Through AWRS: An Avoidance-Aware
+                Recommender System</b
+              ><br />
+              <span style="font-style: italic">January - July 2024</span> |
+              <a
+                class="profile-highlight"
+                href="https://epubs.siam.org/doi/10.1137/1.9781611978520.18"
+                target="_blank"
+                >SDM'25 Proceedings</a
+              >
+              |
+              <a
+                class="profile-highlight"
+                href="https://arxiv.org/abs/2407.09137"
+                target="_blank"
+                >ArXiv</a
+              >
+              <ul>
+                <li>
+                  <b>Collaboration:</b>
+                  <a
+                    class="profile-highlight"
+                    href="http://scholar.google.com/citations?user=tY3BWm0AAAAJ&hl=en"
+                    target="_blank"
+                    ><i>Toyotaro Suzumura</i></a
+                  >
+                  (The University of Tokyo) and
+                  <a
+                    class="profile-highlight"
+                    href="https://scholar.google.com/citations?user=Vrki6PQAAAAJ&hl=en"
+                    target="_blank"
+                    ><i>Yuichiro Yasui</i></a
+                  >
+                  (Nikkei Inc.)
+                </li>
+                <li>
+                  <b>Highlights:</b> Developed AWRS, an Avoidance-Aware
+                  Recommender System for news that incorporates article
+                  avoidance as a key factor to improve recommendations.
+                  Evaluated on datasets in English, Norwegian, and Japanese,
+                  AWRS outperformed existing methods by leveraging avoidance as
+                  an indicator of user preferences.
+                </li>
+              </ul>
             </li>
-            <li><b>NewsReX: An Open-Source Multi-Framework for Neural News Recommendation</b><br>
-                <span style="font-style:italic">January - August 2025</span> | <a class="profile-highlight"
-                                                                                  href="https://arxiv.org/abs/2508.21572"
-                                                                                  target="_blank">CIKM'26</a> | <a class="profile-highlight"
-                                                                                  href="https://arxiv.org/abs/2508.21572"
-                                                                                  target="_blank">ArXiv</a>
-                <ul>
-                    <li><b>Collaboration:</b> <a class="profile-highlight"
-                                                 href="http://scholar.google.com/citations?user=tY3BWm0AAAAJ&hl=en"
-                                                 target="_blank"><i>Toyotaro Suzumura</i></a> (The University of Tokyo)
-                        and <a class="profile-highlight"
-                               href="https://scholar.google.com/citations?user=Vrki6PQAAAAJ&hl=en"
-                               target="_blank"><i>Yuichiro Yasui</i></a> (Nikkei Inc.)
-                    </li>
-                    <li><b>Highlights:</b> An open-source framework that unifies multiple neural news recommendation models
-                        across two ML backends (<b>PyTorch</b> and <b>JAX/Flax</b>). Models are defined through a
-                        structured YAML specification that decouples model definition from framework-specific
-                        implementation, with a Hydra-based configuration system for composable experiments and
-                        single-command framework switching. Cross-framework parity tests verify numerical consistency
-                        across backends, and pre-trained weights are published so results can be reproduced by
-                        inference alone.
-                    </li>
-                </ul>
+            <li>
+              <b
+                >NewsReX: An Open-Source Multi-Framework for Neural News
+                Recommendation</b
+              ><br />
+              <span style="font-style: italic">January - August 2025</span> |
+              <a
+                class="profile-highlight"
+                href="https://arxiv.org/abs/2508.21572"
+                target="_blank"
+                >CIKM'26</a
+              >
+              |
+              <a
+                class="profile-highlight"
+                href="https://arxiv.org/abs/2508.21572"
+                target="_blank"
+                >ArXiv</a
+              >
+              <ul>
+                <li>
+                  <b>Collaboration:</b>
+                  <a
+                    class="profile-highlight"
+                    href="http://scholar.google.com/citations?user=tY3BWm0AAAAJ&hl=en"
+                    target="_blank"
+                    ><i>Toyotaro Suzumura</i></a
+                  >
+                  (The University of Tokyo) and
+                  <a
+                    class="profile-highlight"
+                    href="https://scholar.google.com/citations?user=Vrki6PQAAAAJ&hl=en"
+                    target="_blank"
+                    ><i>Yuichiro Yasui</i></a
+                  >
+                  (Nikkei Inc.)
+                </li>
+                <li>
+                  <b>Highlights:</b> An open-source framework that unifies
+                  multiple neural news recommendation models across two ML
+                  backends (<b>PyTorch</b> and <b>JAX/Flax</b>). Models are
+                  defined through a structured YAML specification that decouples
+                  model definition from framework-specific implementation, with
+                  a Hydra-based configuration system for composable experiments
+                  and single-command framework switching. Cross-framework parity
+                  tests verify numerical consistency across backends, and
+                  pre-trained weights are published so results can be reproduced
+                  by inference alone.
+                </li>
+              </ul>
             </li>
-            <li><b>POPK: Mitigating Popularity Bias via a Temporal-Counterfactual</b><br>
-                <span style="font-style:italic">April - July 2024</span> | <a class="profile-highlight"
-                                                                              href="https://arxiv.org/abs/2412.11192"
-                                                                              target="_blank">ArXiv</a>
-                <ul>
-                    <li><b>Collaboration:</b> <a class="profile-highlight"
-                                                 href="http://scholar.google.com/citations?user=tY3BWm0AAAAJ&hl=en"
-                                                 target="_blank"><i>Toyotaro Suzumura</i></a> (The University of Tokyo)
-                        and <a class="profile-highlight"
-                               href="https://scholar.google.com/citations?user=Vrki6PQAAAAJ&hl=en"
-                               target="_blank"><i>Yuichiro Yasui</i></a> (Nikkei Inc.)
-                    </li>
-                    <li><b>Highlights:</b> Developed POPK, a model which uses temporal-counterfactual analysis to reduce
-                        popularity bias in news recommendations. POPK improves accuracy and diversity by systematically
-                        removing the influence of popular
-                        articles.
-                    </li>
-                </ul>
+            <li>
+              <b
+                >POPK: Mitigating Popularity Bias via a
+                Temporal-Counterfactual</b
+              ><br />
+              <span style="font-style: italic">April - July 2024</span> |
+              <a
+                class="profile-highlight"
+                href="https://arxiv.org/abs/2412.11192"
+                target="_blank"
+                >ArXiv</a
+              >
+              <ul>
+                <li>
+                  <b>Collaboration:</b>
+                  <a
+                    class="profile-highlight"
+                    href="http://scholar.google.com/citations?user=tY3BWm0AAAAJ&hl=en"
+                    target="_blank"
+                    ><i>Toyotaro Suzumura</i></a
+                  >
+                  (The University of Tokyo) and
+                  <a
+                    class="profile-highlight"
+                    href="https://scholar.google.com/citations?user=Vrki6PQAAAAJ&hl=en"
+                    target="_blank"
+                    ><i>Yuichiro Yasui</i></a
+                  >
+                  (Nikkei Inc.)
+                </li>
+                <li>
+                  <b>Highlights:</b> Developed POPK, a model which uses
+                  temporal-counterfactual analysis to reduce popularity bias in
+                  news recommendations. POPK improves accuracy and diversity by
+                  systematically removing the influence of popular articles.
+                </li>
+              </ul>
             </li>
-            <li><b>A SHA-3 Co-Processor for IoT Applications</b><br>
-                <span style="font-style:italic">January - November 2020</span> | <a class="profile-highlight"
-                                                                                    href="https://ieeexplore.ieee.org/document/9263759"
-                                                                                    target="_blank">Paper (IEEE -
-                    WCNSPS'20)</a>
-                <ul>
-                    <li><b>Collaboration:</b> <a class="profile-highlight"
-                                                 href="https://scholar.google.com.br/citations?user=n7DfWz4AAAAJ&hl=pt-BR"
-                                                 target="_blank"><i>Alexandre S. Nery</i></a> (University of Brasília)
-                        and <a class="profile-highlight"
-                               href="https://scholar.google.com.br/citations?user=I5utWksAAAAJ&hl=pt-BR"
-                               target="_blank"><i>Alexandre da C. Sena</i></a> (Rio de Janeiro State University)
-                    </li>
-                    <li><b>Highlights:</b> Designed and implemented a SHA-3 hardware co-processor on FPGA for IoT
-                        applications, achieving 65% faster performance than ARM Cortex-A9 with improved energy
-                        efficiency and reduced circuit area.
-                    </li>
-                </ul>
+            <li>
+              <b>A SHA-3 Co-Processor for IoT Applications</b><br />
+              <span style="font-style: italic">January - November 2020</span> |
+              <a
+                class="profile-highlight"
+                href="https://ieeexplore.ieee.org/document/9263759"
+                target="_blank"
+                >Paper (IEEE - WCNSPS'20)</a
+              >
+              <ul>
+                <li>
+                  <b>Collaboration:</b>
+                  <a
+                    class="profile-highlight"
+                    href="https://scholar.google.com.br/citations?user=n7DfWz4AAAAJ&hl=pt-BR"
+                    target="_blank"
+                    ><i>Alexandre S. Nery</i></a
+                  >
+                  (University of Brasília) and
+                  <a
+                    class="profile-highlight"
+                    href="https://scholar.google.com.br/citations?user=I5utWksAAAAJ&hl=pt-BR"
+                    target="_blank"
+                    ><i>Alexandre da C. Sena</i></a
+                  >
+                  (Rio de Janeiro State University)
+                </li>
+                <li>
+                  <b>Highlights:</b> Designed and implemented a SHA-3 hardware
+                  co-processor on FPGA for IoT applications, achieving 65%
+                  faster performance than ARM Cortex-A9 with improved energy
+                  efficiency and reduced circuit area.
+                </li>
+              </ul>
             </li>
-        </ol>
-    </section>
+          </ol>
+        </section>
 
-    <section class="section" id="honours">
-        <header class="sec__head">
+        <section class="section" id="honours">
+          <header class="sec__head">
             <span class="sec__num">04</span>
             <h2 class="sec__title">Honours</h2>
-        </header>
+          </header>
 
-        <ol>
-            <li><b>Japanese Government (MEXT) Research Scholarship</b> <span
-                    class="meta">April 2023 - April 2025 | <a class="profile-highlight"
-                                                                                        href="https://www.mext.go.jp/en/policy/education/highered/title02/detail02/sdetail02/1373897.htm"
-                                                                                        target="_blank">About</a></span>
-                The Japanese Government (MEXT) Research Scholarship supports international students
-                conducting research at Japanese higher education institutions. Approximately 9,000 students are
-                accepted out of 100,000 global applicants (~9% acceptance rate), with full funding for tuition,
-                living expenses, and research activities.
+          <ol>
+            <li>
+              <b>Japanese Government (MEXT) Research Scholarship</b>
+              <span class="meta"
+                >April 2023 - April 2025 |
+                <a
+                  class="profile-highlight"
+                  href="https://www.mext.go.jp/en/policy/education/highered/title02/detail02/sdetail02/1373897.htm"
+                  target="_blank"
+                  >About</a
+                ></span
+              >
+              The Japanese Government (MEXT) Research Scholarship supports
+              international students conducting research at Japanese higher
+              education institutions. Approximately 9,000 students are accepted
+              out of 100,000 global applicants (~9% acceptance rate), with full
+              funding for tuition, living expenses, and research activities.
             </li>
-            <li><b>Brazilian Government (CNPq) Institutional Scientific Initiation Scholarship
-                (PIBIC)</b> <span
-                    class="meta">August 2019
-                        - July 2020 | <a class="profile-highlight"
-                                         href="https://www.gov.br/inpe/pt-br/area-conhecimento/fomento-a-pesquisa-e-desenvolvimento/pibic-pibiti"
-                                         target="_blank">About</a></span>
-                
-                The PIBIC program, funded by the Federal Government of Brazil, supports
-                undergraduate students in research, technological development, and innovation. Awarded to the top ~4%
-                of undergraduates nationwide on academic merit; funded research into FPGA-based cryptographic
-                security systems.
-            </li>
-        </ol>
-    </section>
+            <li>
+              <b
+                >Brazilian Government (CNPq) Institutional Scientific Initiation
+                Scholarship (PIBIC)</b
+              >
+              <span class="meta"
+                >August 2019 - July 2020 |
+                <a
+                  class="profile-highlight"
+                  href="https://www.gov.br/inpe/pt-br/area-conhecimento/fomento-a-pesquisa-e-desenvolvimento/pibic-pibiti"
+                  target="_blank"
+                  >About</a
+                ></span
+              >
 
-    <section class="section" id="awards">
-        <header class="sec__head">
+              The PIBIC program, funded by the Federal Government of Brazil,
+              supports undergraduate students in research, technological
+              development, and innovation. Awarded to the top ~4% of
+              undergraduates nationwide on academic merit; funded research into
+              FPGA-based cryptographic security systems.
+            </li>
+          </ol>
+        </section>
+
+        <section class="section" id="awards">
+          <header class="sec__head">
             <span class="sec__num">05</span>
             <h2 class="sec__title">Awards</h2>
-        </header>
+          </header>
 
-        <ol>
-            <li><b>SIAM Travel Award – SDM25</b>
-                <span class="meta">May 2025 | <a class="profile-highlight"
-                                                                                   href="https://www.siam.org/conferences-events/conference-support/travel-and-registration-support/"
-                                                                                   target="_blank">About</a> </span>
-                Granted by the Society for Industrial and Applied Mathematics (SIAM), this award
-                supported travel to the 2025 SIAM International Conference on Data Mining (SDM25) held in Alexandria,
-                VA. It recognized promising
-                early-career researchers contributing to the field.
+          <ol>
+            <li>
+              <b>SIAM Travel Award – SDM25</b>
+              <span class="meta"
+                >May 2025 |
+                <a
+                  class="profile-highlight"
+                  href="https://www.siam.org/conferences-events/conference-support/travel-and-registration-support/"
+                  target="_blank"
+                  >About</a
+                >
+              </span>
+              Granted by the Society for Industrial and Applied Mathematics
+              (SIAM), this award supported travel to the 2025 SIAM International
+              Conference on Data Mining (SDM25) held in Alexandria, VA. It
+              recognized promising early-career researchers contributing to the
+              field.
             </li>
-            <li><b>Invited Conference Report – Database Society of Japan</b>
-                <span class="meta">June 2025 | <a class="profile-highlight"
-                                                   href="https://dbsj.org/newsletter-vol-18-no-3/#k2"
-                                                   target="_blank">About</a></span>
-                Invited by Japan's national database society to write the SDM'25 report for its newsletter, 18(3).
+            <li>
+              <b>Invited Conference Report – Database Society of Japan</b>
+              <span class="meta"
+                >June 2025 |
+                <a
+                  class="profile-highlight"
+                  href="https://dbsj.org/newsletter-vol-18-no-3/#k2"
+                  target="_blank"
+                  >About</a
+                ></span
+              >
+              Invited by Japan's national database society to write the SDM'25
+              report for its newsletter, 18(3).
             </li>
-            <li><b>Y Combinator Startup School, Travel Grant</b>
-                <span class="meta">July 2026 | <a class="profile-highlight"
-                                                   href="https://events.ycombinator.com/startup-school-2026"
-                                                   target="_blank">About</a></span>
-                Selected as a high-potential builder for YC's technical conference in San Francisco, with talks by Sam Altman (OpenAI) and Jensen Huang (NVIDIA). Travel funded by YC.
+            <li>
+              <b>Y Combinator Startup School, Travel Grant</b>
+              <span class="meta"
+                >July 2026 |
+                <a
+                  class="profile-highlight"
+                  href="https://events.ycombinator.com/startup-school-2026"
+                  target="_blank"
+                  >About</a
+                ></span
+              >
+              Selected as a high-potential builder for YC's technical conference
+              in San Francisco, with talks by Sam Altman (OpenAI) and Jensen
+              Huang (NVIDIA). Travel funded by YC.
             </li>
-        </ol>
-    </section>
+          </ol>
+        </section>
 
-    <section class="section" id="competitions">
-        <header class="sec__head">
+        <section class="section" id="competitions">
+          <header class="sec__head">
             <span class="sec__num">06</span>
             <h2 class="sec__title">Competitions</h2>
-        </header>
+          </header>
 
-        <ol>
-            <li><b>3rd Place – HackTheLaw, University of Cambridge</b>
-                <span class="meta">June 2026 | <a class="profile-highlight"
-                                                                           href="https://hackthelaw-cambridge.com/"
-                                                                           target="_blank">About</a></span>
-                Hosted by the University of Cambridge and Stanford CodeX. Recognized for technical
-                excellence and LLM integration by a panel drawn from academia, industry (Perplexity, Anthropic), and
-                law firms (Clifford Chance and White &amp; Case). Built Quinn, an AI platform that keeps lawyers across
-                the facts of large, fast-moving cases.
+          <ol>
+            <li>
+              <b>3rd Place – HackTheLaw, University of Cambridge</b>
+              <span class="meta"
+                >June 2026 |
+                <a
+                  class="profile-highlight"
+                  href="https://hackthelaw-cambridge.com/"
+                  target="_blank"
+                  >About</a
+                ></span
+              >
+              Hosted by the University of Cambridge and Stanford CodeX.
+              Recognized for technical excellence and LLM integration by a panel
+              drawn from academia, industry (Perplexity, Anthropic), and law
+              firms (Clifford Chance and White &amp; Case). Built Quinn, an AI
+              platform that keeps lawyers across the facts of large, fast-moving
+              cases.
             </li>
-        </ol>
-    </section>
+          </ol>
+        </section>
 
-    <section class="section" id="projects">
-        <header class="sec__head">
+        <section class="section" id="projects">
+          <header class="sec__head">
             <span class="sec__num">07</span>
             <h2 class="sec__title">Open Source</h2>
-        </header>
+          </header>
 
-        <ol>
-            <li><b>learning-ai.cafe - <a class="profile-highlight" href="https://learning-ai.cafe"
-                                        target="_blank" rel="noopener">Website</a></b><br>
-                A collaborative, open-source AI textbook with one tutorial per topic, guiding readers from first
-                intuition to deep understanding, with runnable code exercises. Anyone can help clarify and improve it.
+          <ol>
+            <li>
+              <b
+                >learning-ai.cafe -
+                <a
+                  class="profile-highlight"
+                  href="https://learning-ai.cafe"
+                  target="_blank"
+                  rel="noopener"
+                  >Website</a
+                ></b
+              ><br />
+              A collaborative, open-source AI textbook with one tutorial per
+              topic, guiding readers from first intuition to deep understanding,
+              with runnable code exercises. Anyone can help clarify and improve
+              it.
             </li>
-            <li><b>NewsReX - <a class="profile-highlight" href="https://github.com/igor17400/NewsReX"
-                                target="_blank" rel="noopener">Code</a> | <a class="profile-highlight"
-                                                                            href="https://huggingface.co/newsrex"
-                                                                            target="_blank"
-                                                                            rel="noopener">Weights</a></b><br>
-                An open-source framework for neural news recommendation, built with <i>The University of Tokyo</i> and
-                <i>Nikkei</i>.
-                <br><br>
-                It is research tooling: models are declared in YAML and composed through <b>Hydra</b>, and run on two
-                backends &mdash; <b>PyTorch</b> and <b>JAX/Flax</b> &mdash; behind a single interface. Cross-framework
-                parity tests verify that both implementations agree numerically before any result is reported, and
-                evaluation is shared and framework-agnostic. Everything is MIT-licensed and every trained weight is
-                public, so results are reproducible by inference alone.
-                <br><br>
-                Shared by <a href="https://x.com/fchollet/status/1980708747489186049" target="_blank"
-                   rel="noopener"><i>François Chollet</i></a>, the creator of Keras.
+            <li>
+              <b
+                >NewsReX -
+                <a
+                  class="profile-highlight"
+                  href="https://github.com/igor17400/NewsReX"
+                  target="_blank"
+                  rel="noopener"
+                  >Code</a
+                >
+                |
+                <a
+                  class="profile-highlight"
+                  href="https://huggingface.co/newsrex"
+                  target="_blank"
+                  rel="noopener"
+                  >Weights</a
+                ></b
+              ><br />
+              An open-source framework for neural news recommendation, built
+              with <i>The University of Tokyo</i> and <i>Nikkei</i>.
+              <br /><br />
+              It is research tooling: models are declared in YAML and composed
+              through <b>Hydra</b>, and run on two backends &mdash;
+              <b>PyTorch</b> and <b>JAX/Flax</b> &mdash; behind a single
+              interface. Cross-framework parity tests verify that both
+              implementations agree numerically before any result is reported,
+              and evaluation is shared and framework-agnostic. Everything is
+              MIT-licensed and every trained weight is public, so results are
+              reproducible by inference alone. <br /><br />
+              Shared by
+              <a
+                href="https://x.com/fchollet/status/1980708747489186049"
+                target="_blank"
+                rel="noopener"
+                ><i>François Chollet</i></a
+              >, the creator of Keras.
             </li>
-            <li><b>NewsrecLib - <a
-                    class="profile-highlight" href="https://github.com/andreeaiana/newsreclib/pull/12" target="_blank">Code</a></b><br>
-                Implemented the PP-REC SOTA model into the news recommendation framework.
+            <li>
+              <b
+                >NewsrecLib -
+                <a
+                  class="profile-highlight"
+                  href="https://github.com/andreeaiana/newsreclib/pull/12"
+                  target="_blank"
+                  >Code</a
+                ></b
+              ><br />
+              Implemented the PP-REC SOTA model into the news recommendation
+              framework.
             </li>
-            <li><b>Qlib - <a
-                    class="profile-highlight" href="https://github.com/microsoft/qlib/pull/990"
-                    target="_blank">Code</a></b><br> Added support for the Brazilian stock market, enabling local
-                investors and researchers
-                to use Qlib's machine learning models and data processing pipelines on Brazilian stock data.
+            <li>
+              <b
+                >Qlib -
+                <a
+                  class="profile-highlight"
+                  href="https://github.com/microsoft/qlib/pull/990"
+                  target="_blank"
+                  >Code</a
+                ></b
+              ><br />
+              Added support for the Brazilian stock market, enabling local
+              investors and researchers to use Qlib's machine learning models
+              and data processing pipelines on Brazilian stock data.
             </li>
-        </ol>
-    </section>
+          </ol>
+        </section>
 
-    <section class="section" id="essentials">
-        <header class="sec__head">
+        <section class="section" id="essentials">
+          <header class="sec__head">
             <span class="sec__num">08</span>
             <h2 class="sec__title">Essentials</h2>
-        </header>
+          </header>
 
-        <h3>Certifications</h3>
-        <hr class="main-separator-light">
-        <ul>
-            <li><b>IELTS:</b> Overall Band Score: 8.0 (Listening: 8.0, Reading: 8.5, Writing: 7.0, Speaking: 8.5)
+          <h3>Certifications</h3>
+          <hr class="main-separator-light" />
+          <ul>
+            <li>
+              <b>IELTS:</b> Overall Band Score: 8.0 (Listening: 8.0, Reading:
+              8.5, Writing: 7.0, Speaking: 8.5)
             </li>
-        </ul>
+          </ul>
 
-        <h3>Courses</h3>
-        <hr class="main-separator-light">
-        <ul>
+          <h3>Courses</h3>
+          <hr class="main-separator-light" />
+          <ul>
             <li>
-                Deep Learning @ <i>Carnegie Mellon University</i> | <a class="profile-highlight"
-                                                                       href="https://certificates.emeritus.org/2c29c0a4-7d09-4537-a330-e3b457e74e85#gs.g1h2dw"
-                                                                       target="_blank">Certificate</a>
-            </li>
-            <li>
-                Digital Signal Processing @ <i>EPFL</i> | <a class="profile-highlight"
-                                                             href="https://drive.google.com/file/d/18Vup-ms97WL1c-UVJZsVDv3mrNMTai2H/view"
-                                                             target="_blank">Certificate</a>
-            </li>
-            <li>
-                Information Theory @ <i>The Chinese University of Hong Kong</i> | <a class="profile-highlight"
-                                                                                     href="https://drive.google.com/file/d/1qHuMfC7kRQE_RSfzu0Q3Dylpw54InBI6/view?usp=sharing"
-                                                                                     target="_blank">Certificate</a>
+              Deep Learning @ <i>Carnegie Mellon University</i> |
+              <a
+                class="profile-highlight"
+                href="https://certificates.emeritus.org/2c29c0a4-7d09-4537-a330-e3b457e74e85#gs.g1h2dw"
+                target="_blank"
+                >Certificate</a
+              >
             </li>
             <li>
-                Algorithms and Data Structures @ <i>UCSD</i> | <a class="profile-highlight"
-                                                                  href="https://drive.google.com/file/d/1eWyGHvgtVHkQPjNi_TGR7X_pN-4BHGIE/view?usp=sharing"
-                                                                  target="_blank">Certificate</a>
+              Digital Signal Processing @ <i>EPFL</i> |
+              <a
+                class="profile-highlight"
+                href="https://drive.google.com/file/d/18Vup-ms97WL1c-UVJZsVDv3mrNMTai2H/view"
+                target="_blank"
+                >Certificate</a
+              >
             </li>
-        </ul>
-
-        <h3>Leadership experiences</h3>
-        <hr class="main-separator-light">
-        <ul>
-            <li>Business Development Lead, Electrical Engineering Junior Enterprise (<a class="profile-highlight"
-                                                                                  href="https://enetec.net.br/"
-                                                                                  target="_blank">ENETEC</a>) <span
-                    class="meta">June 2019 - April 2020</span>
-                ENETEC is a student-run, non-profit consultancy at the University of Brasília. Closed about
-                USD 15,000 in consulting contracts and contributed to ENETEC winning the High Growth, Connected and
-                Impact Junior Company awards in 2019 from <i><a class="profile-highlight"
-                href="https://brasiljunior.org.br/" target="_blank">Brasil Júnior</a></i>.
+            <li>
+              Information Theory @ <i>The Chinese University of Hong Kong</i> |
+              <a
+                class="profile-highlight"
+                href="https://drive.google.com/file/d/1qHuMfC7kRQE_RSfzu0Q3Dylpw54InBI6/view?usp=sharing"
+                target="_blank"
+                >Certificate</a
+              >
             </li>
-            <li>Development Team Lead, VOGA <span class="meta">October 2022 - April 2023</span>
-                Managed and mentored a team of 7 engineers across frontend, data and operations through the
-                post-acquisition integration into BTG Pactual.
+            <li>
+              Algorithms and Data Structures @ <i>UCSD</i> |
+              <a
+                class="profile-highlight"
+                href="https://drive.google.com/file/d/1eWyGHvgtVHkQPjNi_TGR7X_pN-4BHGIE/view?usp=sharing"
+                target="_blank"
+                >Certificate</a
+              >
             </li>
-        </ul>
+          </ul>
 
-        <h3>Languages</h3>
-        <hr class="main-separator-light">
-        <div class="language-container">
-            <div class="language-item">
-                <div class="language-info">
-                    <span class="language-name">Portuguese</span>
-                    <span class="language-level">Native</span>
-                </div>
-                <div class="language-bar">
-                    <div class="language-progress" style="width: 100%"></div>
-                </div>
-            </div>
-            <div class="language-item">
-                <div class="language-info">
-                    <span class="language-name">English</span>
-                    <span class="language-level">Near-native</span>
-                </div>
-                <div class="language-bar">
-                    <div class="language-progress" style="width: 95%"></div>
-                </div>
-            </div>
-            <div class="language-item">
-                <div class="language-info">
-                    <span class="language-name">Spanish</span>
-                    <span class="language-level">Conversational</span>
-                </div>
-                <div class="language-bar">
-                    <div class="language-progress" style="width: 50%"></div>
-                </div>
-            </div>
-            <div class="language-item">
-                <div class="language-info">
-                    <span class="language-name">Japanese</span>
-                    <span class="language-level">Basic</span>
-                </div>
-                <div class="language-bar">
-                    <div class="language-progress" style="width: 20%"></div>
-                </div>
-            </div>
-        </div>
+          <h3>Leadership experiences</h3>
+          <hr class="main-separator-light" />
+          <ul>
+            <li>
+              Business Development Lead, Electrical Engineering Junior
+              Enterprise (<a
+                class="profile-highlight"
+                href="https://enetec.net.br/"
+                target="_blank"
+                >ENETEC</a
+              >) <span class="meta">June 2019 - April 2020</span> ENETEC is a
+              student-run, non-profit consultancy at the University of Brasília.
+              Closed about USD 15,000 in consulting contracts and contributed to
+              ENETEC winning the High Growth, Connected and Impact Junior
+              Company awards in 2019 from
+              <i
+                ><a
+                  class="profile-highlight"
+                  href="https://brasiljunior.org.br/"
+                  target="_blank"
+                  >Brasil Júnior</a
+                ></i
+              >.
+            </li>
+            <li>
+              Development Team Lead, VOGA
+              <span class="meta">October 2022 - April 2023</span>
+              Managed and mentored a team of 7 engineers across frontend, data
+              and operations through the post-acquisition integration into BTG
+              Pactual.
+            </li>
+          </ul>
 
-        <h3>Tech stack</h3>
-        <hr class="main-separator-light">
-        <div class="tech-container">
-            <div class="tech-category">
-                <h4>Programming Languages</h4>
-                <div class="tech-badges">
-                    <span class="tech-badge">Python</span>
-                    <span class="tech-badge">JavaScript</span>
-                    <span class="tech-badge">SQL</span>
-                    <span class="tech-badge">C++</span>
-                    <span class="tech-badge">C</span>
-                    <span class="tech-badge">Java</span>
-                </div>
+          <h3>Languages</h3>
+          <hr class="main-separator-light" />
+          <div class="language-container">
+            <div class="language-item">
+              <div class="language-info">
+                <span class="language-name">Portuguese</span>
+                <span class="language-level">Native</span>
+              </div>
+              <div class="language-bar">
+                <div class="language-progress" style="width: 100%"></div>
+              </div>
             </div>
-            <div class="tech-category">
-                <h4>Frameworks & Libraries</h4>
-                <div class="tech-badges">
-                    <span class="tech-badge">PyTorch</span>
-                    <span class="tech-badge">Lightning AI</span>
-                    <span class="tech-badge">JAX</span>
-                    <span class="tech-badge">PyTorch Geometric</span>
-                    <span class="tech-badge">scikit-learn</span>
-                    <span class="tech-badge">TensorFlow</span>
-                    <span class="tech-badge">Keras</span>
-                    <span class="tech-badge">Plotly</span>
-                    <span class="tech-badge">Strands Agents</span>
-                    <span class="tech-badge">Flask</span>
-                    <span class="tech-badge">FastAPI</span>
-                </div>
+            <div class="language-item">
+              <div class="language-info">
+                <span class="language-name">English</span>
+                <span class="language-level">Near-native</span>
+              </div>
+              <div class="language-bar">
+                <div class="language-progress" style="width: 95%"></div>
+              </div>
             </div>
-            <div class="tech-category">
-                <h4>Infrastructure</h4>
-                <div class="tech-badges">
-                    <span class="tech-badge">AWS</span>
-                    <span class="tech-badge">Cloudflare</span>
-                    <span class="tech-badge">Docker</span>
-                    <span class="tech-badge">Nginx</span>
-                </div>
+            <div class="language-item">
+              <div class="language-info">
+                <span class="language-name">Spanish</span>
+                <span class="language-level">Conversational</span>
+              </div>
+              <div class="language-bar">
+                <div class="language-progress" style="width: 50%"></div>
+              </div>
             </div>
-            <div class="tech-category">
-                <h4>Databases</h4>
-                <div class="tech-badges">
-                    <span class="tech-badge">PostgreSQL</span>
-                </div>
+            <div class="language-item">
+              <div class="language-info">
+                <span class="language-name">Japanese</span>
+                <span class="language-level">Basic</span>
+              </div>
+              <div class="language-bar">
+                <div class="language-progress" style="width: 20%"></div>
+              </div>
             </div>
-        </div>
-    </section>
-    </main>
-</div>
+          </div>
 
-<dialog class="card-modal" id="card-modal" aria-label="Profile card">
-    <div class="pcard">
+          <h3>Tech stack</h3>
+          <hr class="main-separator-light" />
+          <div class="tech-container">
+            <div class="tech-category">
+              <h4>Programming Languages</h4>
+              <div class="tech-badges">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">SQL</span>
+                <span class="tech-badge">C++</span>
+                <span class="tech-badge">C</span>
+                <span class="tech-badge">Java</span>
+              </div>
+            </div>
+            <div class="tech-category">
+              <h4>Frameworks & Libraries</h4>
+              <div class="tech-badges">
+                <span class="tech-badge">PyTorch</span>
+                <span class="tech-badge">Lightning AI</span>
+                <span class="tech-badge">JAX</span>
+                <span class="tech-badge">PyTorch Geometric</span>
+                <span class="tech-badge">scikit-learn</span>
+                <span class="tech-badge">TensorFlow</span>
+                <span class="tech-badge">Keras</span>
+                <span class="tech-badge">Plotly</span>
+                <span class="tech-badge">Strands Agents</span>
+                <span class="tech-badge">Flask</span>
+                <span class="tech-badge">FastAPI</span>
+              </div>
+            </div>
+            <div class="tech-category">
+              <h4>Infrastructure</h4>
+              <div class="tech-badges">
+                <span class="tech-badge">AWS</span>
+                <span class="tech-badge">Cloudflare</span>
+                <span class="tech-badge">Docker</span>
+                <span class="tech-badge">Nginx</span>
+              </div>
+            </div>
+            <div class="tech-category">
+              <h4>Databases</h4>
+              <div class="tech-badges">
+                <span class="tech-badge">PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <dialog class="card-modal" id="card-modal" aria-label="Profile card">
+      <div class="pcard">
         <div class="pcard__top">
-            <h2 class="pcard__name">Igor L.R. Azevedo</h2>
-            <span class="pcard__lvl">Master of Research · AI/ML</span>
+          <h2 class="pcard__name">Igor L.R. Azevedo</h2>
+          <span class="pcard__lvl">Master of Research · AI/ML</span>
         </div>
         <div class="pcard__art">
-            <img src="assets/profile.jpeg" alt="Igor L.R. Azevedo">
+          <img src="assets/profile.jpeg" alt="Igor L.R. Azevedo" />
         </div>
         <div class="pcard__types">
-            <span class="pcard__type">Contrastive learning</span>
-            <span class="pcard__type">Recommenders</span>
-            <span class="pcard__type">LLMs</span>
-            <span class="pcard__type">Electrical Eng.</span>
+          <span class="pcard__type">Contrastive learning</span>
+          <span class="pcard__type">Recommenders</span>
+          <span class="pcard__type">LLMs</span>
+          <span class="pcard__type">Electrical Eng.</span>
         </div>
         <ul class="pcard__moves">
-            <li><i class="dot"></i><span><b>Now</b>Master of Research, AI &amp; ML @ Imperial College London — contrastive learning &amp; mixture of experts</span></li>
-            <li><i class="dot"></i><span><b>Before</b>Research Assistant in AI @ The University of Tokyo — with Toyota
-                and Nikkei, owner of the Financial Times</span></li>
-            <li><i class="dot"></i><span><b>Traits</b>High agency, hard worker, drawn to real problems</span></li>
+          <li>
+            <i class="dot"></i
+            ><span
+              ><b>Now</b>Master of Research, AI &amp; ML @ Imperial College
+              London — contrastive learning &amp; mixture of experts</span
+            >
+          </li>
+          <li>
+            <i class="dot"></i
+            ><span
+              ><b>Before</b>Research Assistant in AI @ The University of Tokyo —
+              with Toyota and Nikkei, owner of the Financial Times</span
+            >
+          </li>
+          <li>
+            <i class="dot"></i
+            ><span
+              ><b>Traits</b>High agency, hard worker, drawn to real
+              problems</span
+            >
+          </li>
         </ul>
         <div class="pcard__foot">
-            <span>🇬🇧 🇯🇵 🇧🇷</span>
-            <span>igorazevedo.com</span>
+          <span>🇬🇧 🇯🇵 🇧🇷</span>
+          <span>igorazevedo.com</span>
         </div>
-    </div>
-    <div class="card-modal__actions">
+      </div>
+      <div class="card-modal__actions">
         <button type="button" class="btn" id="copy-intro">Copy summary</button>
         <button type="button" class="btn" id="close-card">Close</button>
-    </div>
-</dialog>
+      </div>
+    </dialog>
 
-<script>
-    document.getElementById('theme-toggle').addEventListener('click', () => {
-        document.body.classList.toggle('dark');
-    });
+    <script>
+      document.getElementById("theme-toggle").addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+      });
 
-    // Copy email; swap the inner span so the element survives.
-    const emailLink = document.getElementById('email-link');
-    const emailLabel = emailLink.querySelector('span');
-    emailLink.addEventListener('click', (e) => {
+      // Copy email; swap the inner span so the element survives.
+      const emailLink = document.getElementById("email-link");
+      const emailLabel = emailLink.querySelector("span");
+      emailLink.addEventListener("click", (e) => {
         e.preventDefault();
         navigator.clipboard.writeText(emailLabel.textContent).then(() => {
-            const original = emailLabel.textContent;
-            emailLabel.textContent = 'Copied';
-            setTimeout(() => { emailLabel.textContent = original; }, 1200);
+          const original = emailLabel.textContent;
+          emailLabel.textContent = "Copied";
+          setTimeout(() => {
+            emailLabel.textContent = original;
+          }, 1200);
         });
-    });
+      });
 
-    // Scroll-spy for the rail index: highlight the section nearest the top.
-    const links = new Map([...document.querySelectorAll('.rail__index a')]
-        .map(a => [a.getAttribute('href').slice(1), a]));
-    const seen = new Map();
-    const spy = new IntersectionObserver((entries) => {
-        entries.forEach(e => seen.set(e.target.id, e));
-        let best = null;
-        for (const e of seen.values()) {
+      // Scroll-spy for the rail index: highlight the section nearest the top.
+      const links = new Map(
+        [...document.querySelectorAll(".rail__index a")].map((a) => [
+          a.getAttribute("href").slice(1),
+          a,
+        ]),
+      );
+      const seen = new Map();
+      const spy = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => seen.set(e.target.id, e));
+          let best = null;
+          for (const e of seen.values()) {
             if (!e.isIntersecting) continue;
-            if (!best || e.boundingClientRect.top < best.boundingClientRect.top) best = e;
-        }
-        if (!best) return;
-        links.forEach(a => a.classList.remove('is-active'));
-        links.get(best.target.id)?.classList.add('is-active');
-    }, {rootMargin: '0px 0px -70% 0px'});
-    document.querySelectorAll('.section').forEach(s => spy.observe(s));
+            if (!best || e.boundingClientRect.top < best.boundingClientRect.top)
+              best = e;
+          }
+          if (!best) return;
+          links.forEach((a) => a.classList.remove("is-active"));
+          links.get(best.target.id)?.classList.add("is-active");
+        },
+        { rootMargin: "0px 0px -70% 0px" },
+      );
+      document.querySelectorAll(".section").forEach((s) => spy.observe(s));
 
-    // ---- Shareable profile card -------------------------------------
-    const modal = document.getElementById('card-modal');
-    document.getElementById('share-card').addEventListener('click', () => modal.showModal());
-    document.getElementById('close-card').addEventListener('click', () => modal.close());
-    modal.addEventListener('click', (e) => {           // click the backdrop to dismiss
+      // ---- Shareable profile card -------------------------------------
+      const modal = document.getElementById("card-modal");
+      document
+        .getElementById("share-card")
+        .addEventListener("click", () => modal.showModal());
+      document
+        .getElementById("close-card")
+        .addEventListener("click", () => modal.close());
+      modal.addEventListener("click", (e) => {
+        // click the backdrop to dismiss
         if (e.target === modal) modal.close();
-    });
+      });
 
-    const INTRO = [
-        'Igor L.R. Azevedo',
-        '- Currently Master of Research, AI & ML @ Imperial College London, working on contrastive learning & mixture of experts',
-        '- Former Research Assistant in AI @ The University of Tokyo, in partnership with Toyota and Nikkei (owner of the Financial Times)',
-        '- High agency, hard worker, and passionate about solving real problems',
-        'igorazevedo.com'
-    ].join('\n');
+      const INTRO = [
+        "Igor L.R. Azevedo",
+        "- Currently Master of Research, AI & ML @ Imperial College London, working on contrastive learning & mixture of experts",
+        "- Former Research Assistant in AI @ The University of Tokyo, in partnership with Toyota and Nikkei (owner of the Financial Times)",
+        "- High agency, hard worker, and passionate about solving real problems",
+        "igorazevedo.com",
+      ].join("\n");
 
-    const copyBtn = document.getElementById('copy-intro');
-    copyBtn.addEventListener('click', () => {
+      const copyBtn = document.getElementById("copy-intro");
+      copyBtn.addEventListener("click", () => {
         navigator.clipboard.writeText(INTRO).then(() => {
-            copyBtn.textContent = 'Copied';
-            setTimeout(() => { copyBtn.textContent = 'Copy summary'; }, 1400);
+          copyBtn.textContent = "Copied";
+          setTimeout(() => {
+            copyBtn.textContent = "Copy summary";
+          }, 1400);
         });
-    });
+      });
 
-    // ---- Right-gutter toy: a stick figure walking down the margin, -----
-    // hopping the blocks in its way. Position tracks scroll; the walk cycle
-    // and the hop arc both derive from it, so nothing animates at rest.
-    const cvs = document.querySelector('.walker');
-    if (cvs && cvs.getContext) {
-        const W = 132, H = 520, TOP = 26, BOT = 40, LINE = 92;
+      // ---- Right-gutter toy: a stick figure walking down the margin, -----
+      // hopping the blocks in its way. Position tracks scroll; the walk cycle
+      // and the hop arc both derive from it, so nothing animates at rest.
+      const cvs = document.querySelector(".walker");
+      if (cvs && cvs.getContext) {
+        const W = 132,
+          H = 520,
+          TOP = 26,
+          BOT = 40,
+          LINE = 92;
         const BLOCKS = [96, 178, 262, 344, 424];
         const dpr = Math.min(2, window.devicePixelRatio || 1);
         cvs.width = W * dpr;
         cvs.height = H * dpr;
-        cvs.style.width = W + 'px';
-        cvs.style.height = H + 'px';
-        const ctx = cvs.getContext('2d');
+        cvs.style.width = W + "px";
+        cvs.style.height = H + "px";
+        const ctx = cvs.getContext("2d");
         ctx.scale(dpr, dpr);
         const css = getComputedStyle(document.body);
-        const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
         const seg = (x1, y1, x2, y2) => {
-            ctx.beginPath();
-            ctx.moveTo(x1, y1);
-            ctx.lineTo(x2, y2);
-            ctx.stroke();
+          ctx.beginPath();
+          ctx.moveTo(x1, y1);
+          ctx.lineTo(x2, y2);
+          ctx.stroke();
         };
 
         function draw(p) {
-            const ink = css.getPropertyValue('--text').trim() || '#222';
-            const accent = css.getPropertyValue('--accent').trim() || '#F7374F';
-            const faint = css.getPropertyValue('--rule-strong').trim() || '#8a8f96';
-            ctx.clearRect(0, 0, W, H);
+          const ink = css.getPropertyValue("--text").trim() || "#222";
+          const accent = css.getPropertyValue("--accent").trim() || "#F7374F";
+          const faint =
+            css.getPropertyValue("--rule-strong").trim() || "#8a8f96";
+          ctx.clearRect(0, 0, W, H);
 
-            ctx.strokeStyle = faint;
-            ctx.lineWidth = 1;
-            ctx.setLineDash([2, 6]);
-            seg(LINE + 0.5, TOP, LINE + 0.5, H - BOT);
-            ctx.setLineDash([]);
+          ctx.strokeStyle = faint;
+          ctx.lineWidth = 1;
+          ctx.setLineDash([2, 6]);
+          seg(LINE + 0.5, TOP, LINE + 0.5, H - BOT);
+          ctx.setLineDash([]);
 
-            ctx.fillStyle = faint;
-            BLOCKS.forEach(by => ctx.fillRect(LINE - 7, by - 4, 14, 8));
+          ctx.fillStyle = faint;
+          BLOCKS.forEach((by) => ctx.fillRect(LINE - 7, by - 4, 14, 8));
 
-            const y = TOP + p * (H - TOP - BOT);
+          const y = TOP + p * (H - TOP - BOT);
 
-            let hop = 0;
-            for (const by of BLOCKS) {
-                const d = (y - by) / 30;
-                if (Math.abs(d) < 1) hop = Math.max(hop, Math.cos(d * Math.PI / 2));
-            }
-            const x = LINE - 16 - hop * 22;
-            const swing = hop > 0.05 ? 0 : Math.sin(y * 0.3) * 4;
-            const tuck = hop * 5;
+          let hop = 0;
+          for (const by of BLOCKS) {
+            const d = (y - by) / 30;
+            if (Math.abs(d) < 1)
+              hop = Math.max(hop, Math.cos((d * Math.PI) / 2));
+          }
+          const x = LINE - 16 - hop * 22;
+          const swing = hop > 0.05 ? 0 : Math.sin(y * 0.3) * 4;
+          const tuck = hop * 5;
 
-            ctx.strokeStyle = ink;
-            ctx.fillStyle = accent;
-            ctx.lineWidth = 1.6;
-            ctx.lineCap = 'round';
+          ctx.strokeStyle = ink;
+          ctx.fillStyle = accent;
+          ctx.lineWidth = 1.6;
+          ctx.lineCap = "round";
 
-            const hy = y - 11;
-            ctx.beginPath();
-            ctx.arc(x, hy, 3.6, 0, Math.PI * 2);
-            ctx.fill();
-            seg(x, hy + 4, x, y + 2);
-            seg(x, hy + 7, x - 5, y - 2 + swing * 0.5);
-            seg(x, hy + 7, x + 5, y - 2 - swing * 0.5);
-            seg(x, y + 2, x - 4 - tuck, y + 9 - tuck + swing);
-            seg(x, y + 2, x + 4 + tuck, y + 9 - tuck - swing);
+          const hy = y - 11;
+          ctx.beginPath();
+          ctx.arc(x, hy, 3.6, 0, Math.PI * 2);
+          ctx.fill();
+          seg(x, hy + 4, x, y + 2);
+          seg(x, hy + 7, x - 5, y - 2 + swing * 0.5);
+          seg(x, hy + 7, x + 5, y - 2 - swing * 0.5);
+          seg(x, y + 2, x - 4 - tuck, y + 9 - tuck + swing);
+          seg(x, y + 2, x + 4 + tuck, y + 9 - tuck - swing);
         }
 
         const render = () => {
-            const max = document.documentElement.scrollHeight - window.innerHeight;
-            const p = (max > 0 && !reduce) ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
-            draw(p);
+          const max =
+            document.documentElement.scrollHeight - window.innerHeight;
+          const p =
+            max > 0 && !reduce
+              ? Math.min(1, Math.max(0, window.scrollY / max))
+              : 0;
+          draw(p);
         };
-        addEventListener('scroll', render, {passive: true});
-        addEventListener('resize', render);
+        addEventListener("scroll", render, { passive: true });
+        addEventListener("resize", render);
         render();
-    }
-</script>
-</body>
-
+      }
+    </script>
+  </body>
 </html>
